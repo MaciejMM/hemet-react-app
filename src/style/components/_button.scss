@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    background-color: $yellow;
+    color: $black-90;
+    min-width: 150px;
+    text-align: center;
+    font-weight: $medium;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 200px;
+    height: 38px;
+    display: grid;
+    place-content: center;
+    &:hover{
+        background-color: $black-75;
+        color: $white-100;
+    }
+
+    &-xl{
+        width: 100%;
+        min-height: 50px;
+        text-transform: uppercase;
+        
+        font-weight: $bolder;
+        @include for-tablet-portrait-up{
+            max-width: 250px;
+        }
+    }
+}

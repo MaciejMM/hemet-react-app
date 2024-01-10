@@ -1,0 +1,139 @@
+.project-filters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    color: $black-50;
+    li{
+        list-style:  none;
+        text-transform:uppercase;
+        flex-wrap:wrap ;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        @include for-desktop-up{
+            margin-bottom: 2rem;
+            font-size:1rem; 
+        }
+        cursor: pointer;
+        &:not(:last-of-type){
+            margin-right:1rem;
+     
+        }
+    }
+
+    .active{
+        font-weight: bold;
+        color: $black-90;
+    }
+}
+
+.projects-page{
+
+    margin-bottom: 48px;
+    @include for-tablet-portrait-up{
+        display: grid ;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    @include for-desktop-up{
+        grid-template-columns: repeat(3,1fr) ;
+        margin-bottom: 80px ;
+    }
+    .p-card{
+        cursor: pointer;
+        display: grid;
+        grid-template-rows: auto auto;
+        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+        transition: box-shadow .4s ;
+        position: relative;
+
+        @include for-tablet-portrait-up{
+            &:not(:last-of-type){
+                margin-bottom: 0px !important;
+            }
+        }
+
+
+
+        @include for-desktop-up{
+            height: 450px;
+            overflow-y: hidden;
+            &:not(:last-of-type){
+                margin-bottom: 0px;
+            }
+
+            &:hover .project{
+                bottom: 0px ;
+                transition: bottom .3s ;
+            }
+        }
+        &:not(:last-of-type){
+            margin-bottom: 20px;
+        }
+
+        &:hover{
+            box-shadow: 0 4px 20px 2px rgba(0,0,0,0.1);
+        }
+        img{
+            width: 100%;
+            height:  450px;
+            object-fit: cover;
+            @include for-tablet-portrait-up{
+                height: calc((100vw - 32px) * 0.5625);
+            }
+            @include for-desktop-up{
+                height: 450px;
+            }
+        }
+
+
+        
+        .project{
+            transition: box-shadow .4s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            height: 86px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 16px;
+            padding-right: 16px;
+
+            @include for-desktop-up{
+                bottom: -86px;
+                transition: all .3s;
+            }
+            &__name{
+                font-size: 20px;
+                color: $white-100;
+                font-weight: $medium;
+            }
+            &__company{
+                font-size: 0.9rem;
+                color: $black-10;
+                font-weight: $regular;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                @include for-desktop-up{
+                    font-size: 0.8rem;  
+                }
+            }
+
+        }
+    }
+    .p-card:hover .project{
+
+        bottom: 0px ;
+        transition: bottom .3s !important;
+    }
+    
+
+}
+
+

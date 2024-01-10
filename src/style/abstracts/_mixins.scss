@@ -1,0 +1,25 @@
+@function rem($font-size) {
+  @return ($font-size / 16px * 1rem)
+}
+
+
+//  576px;
+@mixin for-tablet-portrait-up {
+    @media (min-width: $screen-sm-min) {
+        @content;
+    }
+}
+
+//  768px;
+@mixin for-tablet-landscape-up {
+    @media (min-width: $screen-md-min) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: $screen-lg-min) {
+        @content;
+    }
+}
+
