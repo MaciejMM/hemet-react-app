@@ -65,37 +65,32 @@ header {
         left: 0;
         width: 100%;
         height: calc(100vh - 70px);
-        background-color: rgba(0,0,0,.8);
+        background-color: white;
 
         ul{ 
             padding-left:15px ;
             padding-right:15px ;
             list-style: none;
-            background-color: white;
             padding-bottom: 112px;
             li{
                 border-bottom: 1px solid rgba(128, 128, 128, .2);
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
                 a{
                     display: flex;
                     align-items: flex-end;
-                    font-size: 20px;
-                    font-weight: $medium;
-                    height: 64px;
+                    font-size: 12px;
                     width: 100%;
-                    color: $black-75;
-                    font-weight: $regular;
+                    color: $black-90;
+                    font-weight: $bold;
                 }
             }
         }
     }
 
-    .show {
-        display: initial;
-    }
 
-    .hide{
-        display: none;
-    }
 }
 
 

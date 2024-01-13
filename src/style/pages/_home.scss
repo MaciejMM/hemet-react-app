@@ -88,7 +88,6 @@
                 transform: translateY(-50%);
                 left: 0;
                 width: 10px;
-                height: 100%;
                 background-color: $yellow;
                 height: 0.72em;
                 @include for-tablet-landscape-up{
@@ -151,8 +150,9 @@
     }
     img{
         width: 100%;
-        max-height: calc((100vw - 32px) * 0.5625);
-        object-fit: cover;
+        height: 100%;
+        //max-height: calc((100vw - 32px) * 0.5625);
+        object-fit: fill;
         @include for-tablet-portrait-up {
             height: 100%;
         }
@@ -303,7 +303,7 @@
         flex-direction: column;
         justify-content: space-between;
         .card {
-            box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
             padding-left: 1rem;
             padding-right: 1rem;
             transition: box-shadow 0.4s, margin-left .5s;
@@ -377,11 +377,13 @@
 
         @include for-tablet-portrait-up {
                 height:  calc((100vw - 32px) * 0.5625);
-                object-fit: cover;
+                object-fit: fill;
         }
 
         @include for-desktop-up{
             height: 100%;
+            width: 100%;
+            object-fit: fill;
         }
 
     }
@@ -397,7 +399,7 @@
             display: inherit;
             flex-direction: inherit;
             padding: 1rem;
-            box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
             transition: box-shadow 0.4s;
             background-color: $white-100;
             &:hover{

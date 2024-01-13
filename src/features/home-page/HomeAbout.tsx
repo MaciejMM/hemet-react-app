@@ -4,7 +4,7 @@ export const HomeAbout = ()=>{
 
     return(
         <div className="container main-about">
-            <img src={"images/pexels-kelly-lacy-2833686.jpg"} alt="" className="img-1 lightbox"></img>
+            <img src={"images/IMG_20210318_115012.jpg"} alt="" className="img-1 lightbox"></img>
                     <main>
                         <div className="title">O nas</div>
                         <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus

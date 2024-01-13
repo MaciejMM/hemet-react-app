@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {getAllRoutes} from "../services/route-service";
-import {Close, Menu} from "@mui/icons-material";
+import {ArrowForward, Close, Menu} from "@mui/icons-material";
 import {useAppStore} from "../state/AppState";
 
 
@@ -15,6 +15,10 @@ export const Header = () => {
     const handleClick = () => {
         setShowMenu(!showMenu);
     };
+
+    const hideMenu = ():any =>{
+        setShowMenu(false);
+    }
 
     return (
         <header>
@@ -32,12 +36,12 @@ export const Header = () => {
             {
                 showMenu ?
                     <div className="burger-menu">
-                        <ul>
                             <ul>
-                                {getAllRoutes().map((route, index) => <li key={index}><Link
-                                    to={route.path}>{route.text}</Link></li>)}
+                                {getAllRoutes().map((route, index) => <li onClick={hideMenu} key={index}>
+                                    <Link to={route.path}>{route.text}</Link>
+                                    <ArrowForward></ArrowForward>
+                                </li>)}
                             </ul>
-                        </ul>
                     </div> : <></>
 
             }
