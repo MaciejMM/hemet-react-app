@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 
 type Service = {
     name: string;
@@ -36,7 +35,7 @@ export const HomeServices = () => {
             <div className="title">Nasze usługi</div>
             <img
                 className='service-img lightbox'
-                src={'images/saad-salim-PqRvLsjD_TU-unsplash.jpg'}
+                src={'images/IMG_20190704_121515.jpg'}
                 alt=""></img>
             <main>
                 {
@@ -47,20 +46,12 @@ export const HomeServices = () => {
                                 <div className="card-title">
                                     <img src={"images/red-crane-services.svg"} alt=""></img>
                                     {service.name}
-                                    <span className="material-icons">expand_more</span>
-                                </div>
-                                <div className="expand collapse">
-                                    <div className="text">{service.text}</div>
-                                    <span className='read-more'>Czytaj więcej <span
-                                        className="material-icons">arrow_forward</span></span>
                                 </div>
                             </div>
                         )
                     })
                 }
-                <div className='see-more '>
-                    <Link to={"/services"} className='btn btn-xl'>Zobacz więcej</Link>
-                </div>
+
             </main>
 
         </div>

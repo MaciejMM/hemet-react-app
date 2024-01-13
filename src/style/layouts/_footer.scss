@@ -90,18 +90,14 @@ footer {
                 }
             }
 
+          .contact {
+              padding-bottom: 8px;
+              a,span{
+                  color: $white-100;
+                  margin-left: 16px;
+              }
+          }
 
-            .material-icons {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                a {
-                    color: $black-10;
-                    margin-left: 16px;
-                    font-size: 1rem;
-                }
-            }
         }
     }
 }

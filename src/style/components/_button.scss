@@ -1,18 +1,18 @@
 .btn {
-    display: inline-block;
     background-color: $yellow;
     color: $black-90;
+    display: grid;
+    height: 38px;
     min-width: 150px;
-    text-align: center;
     font-weight: $medium;
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 200px;
-    height: 38px;
-    display: grid;
     place-content: center;
+    text-align: center;
+    width: 200px;
     &:hover{
         background-color: $black-75;
-        color: $white-100;
+        color: $yellow;
+        border: 2px solid $yellow ;
     }
 
     &-xl{

@@ -5,13 +5,14 @@ import {Header} from "./components/Header";
 import {Footer} from "./components/Footer";
 import {HomePage} from "./features/home-page/HomePage";
 import {ContactPage} from "./features/contact-page/ContactPage";
-import {Projects} from "./pages/Projects";
-import {Services} from "./pages/Services";
 import {AboutPage} from "./features/about-page/AboutPage";
+import {ProjectPage} from "./features/projects/ProjectPage";
+import {ServicesPage} from "./features/services-page/ServicesPage";
 
 
 
 const App = () => {
+
 
 
     return (
@@ -20,8 +21,8 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/contacts" element={<ContactPage/>}/>
-                <Route path="/projects" element={<Projects/>}/>
-                <Route path="/services" element={<Services/>}/>
+                <Route path="/projects" element={<ProjectPage/>}/>
+                <Route path="/services" element={<ServicesPage/>}/>
                 <Route path="/about" element={<AboutPage/>}/>
             </Routes>
             <Footer/>

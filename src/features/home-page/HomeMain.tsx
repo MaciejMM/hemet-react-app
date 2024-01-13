@@ -9,7 +9,7 @@ export const HomeMain = () => {
             <div className="container">
                 <h3>Konstrukcje stalowe</h3>
                 <h1>HEMET</h1>
-                <div className="description">15 lat doświadczenia w budowaniu konstrukcji stalowych</div>
+                <div className="description">15 lat doświadczenia w budowaniu <span>konstrukcji stalowych</span></div>
                 <div className="btns">
                     <a className='btn btn-xl' href="/projects">Nasze projekty</a>
                     <a className='btn btn-xl' href="/contacts">kontakt</a>

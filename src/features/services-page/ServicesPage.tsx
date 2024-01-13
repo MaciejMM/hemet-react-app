@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Services = () => {
+export const ServicesPage = () => {
     return (
         <div>
             <h2>Services</h2>
-            <p>Welcome to our service page!</p>
+            <p>Welcome to our Services page!</p>
         </div>);
 };

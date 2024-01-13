@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {Mail, Call, LocationOn} from '@mui/icons-material';
+import {Call, Email, LocationOn} from '@mui/icons-material';
 
 export const ContactPage = () => {
 
@@ -11,22 +11,20 @@ export const ContactPage = () => {
                     <li><a href="/">Strona główna</a></li>
                     <li>Kontakt</li>
                 </ul>
-                <div className="title">Kontakt</div>
             </div>
 
-            <div className="container concact-page">
-                <img src={"images/saad-salim-PqRvLsjD_TU-unsplash.jpg"} alt=""/>
+            <div className="container main-contact">
+                <img src={"images/pexels-hassan-ouajbir-804065.jpg"} className="lightbox" alt=""></img>
                 <main>
+                    <div className="title">Kontakt</div>
                     <h3 className="question">Masz pytanie?</h3>
                     <p className="question-text">Napisz do nas, a nasz zespół odezwie się do Ciebie w ciągu 24
                         godzin.</p>
-                    <div className="contact">
-                        <Link className="contact-link" to={"tel:+48655120722"}><Call/>+48 655 120 722</Link>
-                        <Link className="contact-link"
-                              to={"mailto:hemet@hemet.hg.pl"}><Mail></Mail>hemet@hemet.hg.pl</Link>
-                        <LocationOn className="contact-link">Plac Wolności 21, 64-000 Kościan</LocationOn>
-                    </div>
-
+                    <div className="contact call"><Call></Call><Link to="tel:+48655120722">+48 655 120 722</Link></div>
+                    <div className="contact email"><Email></Email><Link
+                        to="mailto:hemet@hemet.hg.pl">hemet@hemet.hg.pl</Link></div>
+                    <div className="contact location">
+                        <LocationOn></LocationOn><span>Plac Wolności 21, 64-000 Kościan</span></div>
                 </main>
             </div>
         </div>

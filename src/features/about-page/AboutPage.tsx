@@ -19,8 +19,8 @@ export const AboutPage = () => {
                     Iaculis rhoncus tortor egestas nunc enim quam dictum rutrum. Pellentesque nisl aliquet volutpat
                     proin mi diam. Non rhoncus facilisi turpis id nibh nibh et sed.
                 </div>
-                <img src={'images/fake_img.png'} alt="" className="pic-1"></img>
-                <img src={'images/fake_img.png'} alt="" className="pic-2"></img>
+                <img src={'images/IMG_20180802_111201.jpg'} alt="" className="pic-1"></img>
+                <img src={'images/IMG_20180625_151921.jpg'} alt="" className="pic-2"></img>
 
                 <div className=" about-add text">
                     Pretium sem ornare facilisis nibh maecenas. Consequat semper scelerisque arcu id nulla. Interdum
@@ -29,8 +29,7 @@ export const AboutPage = () => {
                     vestibulum. Arcu eu suspendisse consectetur ut lacinia lorem sem.
                 </div>
 
-                <img src={'images/fake_img.png'} alt="" className="pic-3"></img>
-                <img src={'images/fake_img.png'} alt="" className="pic-4"></img>
+                <img src={'images/IMG_20191030_112518.jpg'} alt="" className="pic-3"></img>
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {getAllRoutes} from "../services/route-service";
+import {Call, Email, LocationOn} from "@mui/icons-material";
 
 export const Footer = () => {
 
@@ -35,13 +36,11 @@ export const Footer = () => {
 
                 <ul>
                     <li>Kontakt</li>
-                    <li><span className="material-icons">call<Link to={'tel:+48655120722'}>+48 655 120 722</Link></span>
-                    </li>
-                    <li><span className="material-icons">email<Link
-                        to="mailto:hemet@hemet.hg.pl">hemet@hemet.hg.pl</Link></span>
-                    </li>
-                    <li><span className="material-icons">location_on<span>Plac Wolności 21, 64-000 Kościan</span></span>
-                    </li>
+                    <div className="contact call"><Call></Call><Link to="tel:+48655120722">+48 655 120 722</Link></div>
+                    <div className="contact email"><Email></Email><Link
+                        to="mailto:hemet@hemet.hg.pl">hemet@hemet.hg.pl</Link></div>
+                    <div className="contact location">
+                        <LocationOn></LocationOn><span>Plac Wolności 21, 64-000 Kościan</span></div>
                 </ul>
 
             </div>
