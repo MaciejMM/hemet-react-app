@@ -1,18 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {Call, Email, LocationOn} from '@mui/icons-material';
+import {Breadcrumb} from "../../components/Breadcrumb";
 
 export const ContactPage = () => {
+    const CONTACT_TITLE = "Kontakt";
 
     return (
         <div>
-            <div className="container">
-                <ul className="breadcrumb">
-                    <li><a href="/">Strona główna</a></li>
-                    <li>Kontakt</li>
-                </ul>
-            </div>
-
+            <Breadcrumb title={CONTACT_TITLE}></Breadcrumb>
             <div className="container main-contact">
                 <img src={"images/pexels-hassan-ouajbir-804065.jpg"} className="lightbox" alt=""></img>
                 <main>

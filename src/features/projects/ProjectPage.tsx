@@ -1,4 +1,6 @@
 import React from "react";
+import {ProjectCard} from "./ProjectCard";
+import {Breadcrumb} from "../../components/Breadcrumb";
 
 export const ProjectPage = () => {
 
@@ -61,32 +63,22 @@ export const ProjectPage = () => {
             img: 'imgs/projects/prologis_wroclaw.jpg',
         },
     ]
-
+    const PROJECT_PAGE_TITLE = "Projekty";
 
     return (
-        <div className="container ">
-            <ul className="breadcrumb">
-                <li><a href="/">Strona glowna</a></li>
-                <li>Projekty</li>
-            </ul>
-            <div className="title">Projekty</div>
-
-            <div className="projects-page">
-                {
-                    projects.map((project,index) => {
-                        return (
-                            <div className="p-card" key={index}>
-                                <img className="lightbox" src={project.img} alt=""></img>
-                                <div className='project'>
-                                    <div className="project__company">{project.name} <span>{project.city}</span></div>
-                                    <div className="project__name pb8">{project.client}</div>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
+        <div>
+            <Breadcrumb title={PROJECT_PAGE_TITLE}></Breadcrumb>
+            <div className="container ">
+                <div className="title">{PROJECT_PAGE_TITLE}</div>
+                <div className="projects-page">
+                    {
+                        projects.map((project, i) => <ProjectCard key={i} index={i}
+                                                                  cardDetails={project}></ProjectCard>)
+                    }
+                </div>
             </div>
-        </div>)
+        </div>
+    )
 
 
 };
