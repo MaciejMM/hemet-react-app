@@ -6,7 +6,7 @@ export const AboutPage = () => {
     const BREADCRUMB_TITLE = "O nas";
 
     return (
-        <div>
+        <div className="pb-32">
             <Breadcrumb title={BREADCRUMB_TITLE}></Breadcrumb>
             <div className="container">
                 <div className="title">O nas</div>
