@@ -1,8 +1,5 @@
 import React from "react";
 
 export const Button = () => {
-
-    return (
-        <div>Btn</div>
-    )
-}
+  return <div>Btn</div>;
+};

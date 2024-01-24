@@ -1,22 +1,22 @@
-.title{
-    font-size:28px;
-    color: $black-90;
-    font-weight: $medium;
-    padding-top: 3rem;
-    position: relative;
-    padding-bottom: 2.75rem;
-    @include for-desktop-up{
-        padding-top: 4.5rem;
-        font-size: 2.5rem;
-        padding-bottom: 3rem;
-    }
-    &::before{
-        content: "";
-        position: absolute;
-        bottom: 32px;
-        left: 0;
-        width: 48px;
-        height: 4px;
-        background-color: $yellow;
-    }
+.title {
+  font-size: 28px;
+  color: $black-90;
+  font-weight: $medium;
+  padding-top: 3rem;
+  position: relative;
+  padding-bottom: 2.75rem;
+  @include for-desktop-up {
+    padding-top: 4.5rem;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    background-color: $yellow;
+  }
 }

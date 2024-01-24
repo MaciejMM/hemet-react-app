@@ -1,89 +1,86 @@
 .services-page {
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 40px;
+  @include for-tablet-portrait-up {
     display: grid;
+    grid-template-columns: 1fr 1fr !important;
     grid-gap: 20px;
-    margin-bottom: 40px;
-    @include for-tablet-portrait-up {
-        display: grid;
-        grid-template-columns: 1fr 1fr !important;
-        grid-gap: 20px;
+  }
+  @include for-desktop-up {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 20px;
+    margin-bottom: 80px !important;
+  }
+  .card {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 400px;
+    img {
+      width: 100%;
+      height: 400px;
+      transition: height 0.5s ease;
+      object-fit: cover;
     }
-    @include for-desktop-up {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) !important;
-        grid-gap: 20px;
-        margin-bottom: 80px !important;
-    }
-    .card {
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+    .box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(25, 25, 25, 0.75);
+
+      &__title {
+        height: 69px;
+        padding-left: 12px;
+        padding-right: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: $white-100;
+        font-size: 1.25rem;
+        font-weight: $regular;
+
+        span {
+          color: $yellow;
+          transition: transform 0.5s;
+        }
+      }
+
+      &__text {
+        height: 0px;
+        overflow-y: hidden;
+        padding: 0;
+        color: $white-100;
+        transition: height 0.5s;
         position: relative;
-        height: 400px;
-        img {
-            width: 100%;
-            height: 400px;
-            transition: height .5s ease;
-            object-fit: cover;
+
+        &::before {
+          position: absolute;
+          width: calc(100% - 24px);
+          height: 1px;
+          content: "";
+          background-color: $white-100;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
         }
-
-        .box {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(25, 25, 25, 0.75);
-
-            &__title {
-                height: 69px;
-                padding-left: 12px;
-                padding-right: 12px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                color: $white-100;
-                font-size: 1.25rem;
-                font-weight: $regular;
-
-                span {
-                    color: $yellow;
-                    transition: transform .5s;
-                }
-            }
-
-
-            &__text {
-                height: 0px;
-                overflow-y: hidden;
-                padding: 0;
-                color: $white-100;
-                transition: height .5s;
-                position: relative;
-
-                &::before {
-                    position: absolute;
-                    width: calc(100% - 24px);
-                    height: 1px;
-                    content: "";
-                    background-color: $white-100;
-                    top: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-            }
-        }
+      }
     }
+  }
 
-    .card:hover .box__text,
-    .card:active .box__text {
-        height: calc(400px - 69px);
-        padding: 16px 12px;
-        transition: height .5s;
-    }
+  .card:hover .box__text,
+  .card:active .box__text {
+    height: calc(400px - 69px);
+    padding: 16px 12px;
+    transition: height 0.5s;
+  }
 
-    .card:hover .material-icons {
-        transform: rotate(-180deg);
-        transition: transform .5s;
-    }
-
-
+  .card:hover .material-icons {
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+  }
 }

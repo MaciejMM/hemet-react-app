@@ -1,103 +1,97 @@
 footer {
-    background-color: $black-75;
-    padding: 48px 0;
+  background-color: $black-75;
+  padding: 48px 0;
 
-    @include for-desktop-up {
-        padding: 0px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+  @include for-desktop-up {
+    padding: 80px 0;
+  }
+
+  .container {
+    display: grid !important;
+    grid-gap: 32px;
+    grid-template-areas:
+      "address"
+      "office"
+      "production"
+      "links"
+      "contact";
+
+    @include for-tablet-portrait-up {
+      grid-template-areas:
+        "address office"
+        "production links"
+        "contact contact";
     }
 
-    .container {
-        display: grid !important;
-        grid-gap: 32px;
-        grid-template-areas:
-        "address"
-        "office"
-        "production"
-        "links"
-        "contact";
-
-        @include for-tablet-portrait-up{
-            grid-template-areas:
-            "address office"
-            "production links"
-            "contact contact"
-            ;
-        }
-
-        @include for-tablet-landscape-up{
-            grid-template-rows: 1fr min-content;
-            grid-template-areas:
-            "address office production links"
-            "contact contact contact contact"
-            ;
-        }
-
-        ul:nth-of-type(1){
-            grid-area: address;
-        }
-        ul:nth-of-type(2){
-            grid-area: office;
-        }
-        ul:nth-of-type(3){
-            grid-area: production;
-        }
-        ul:nth-of-type(4){
-            grid-area: links;
-        }
-        ul:nth-of-type(5){
-            grid-area: contact;
-        }
-
-
-
-
-        ul {
-            list-style: none;
-            color: $black-10;
-
-
-            &:not(:last-of-type) {
-                padding-bottom: 24px;
-
-                @include for-desktop-up {
-                    padding-bottom: 0px;
-                }
-            }
-
-
-
-            li {
-
-                &:first-child {
-                    color: $white-100;
-                    font-weight: $medium;
-                    font-size: 1.2rem;
-                }
-
-                &:not(:last-of-type) {
-                    padding-bottom: 8px;
-                }
-
-                &:first-of-type {
-                    padding-bottom: 12px;
-                }
-
-                a {
-                    color: $white-100;
-                    font-weight: $regular;
-                }
-            }
-
-          .contact {
-              padding-bottom: 8px;
-              a,span{
-                  color: $white-100;
-                  margin-left: 16px;
-              }
-          }
-
-        }
+    @include for-tablet-landscape-up {
+      grid-template-rows: 1fr min-content;
+      grid-template-areas:
+        "address office production links"
+        "contact contact contact contact";
     }
+
+    ul:nth-of-type(1) {
+      grid-area: address;
+    }
+
+    ul:nth-of-type(2) {
+      grid-area: office;
+    }
+
+    ul:nth-of-type(3) {
+      grid-area: production;
+    }
+
+    ul:nth-of-type(4) {
+      grid-area: links;
+    }
+
+    ul:nth-of-type(5) {
+      grid-area: contact;
+    }
+
+    ul {
+      list-style: none;
+      color: $black-10;
+
+      &:not(:last-of-type) {
+        padding-bottom: 24px;
+
+        @include for-desktop-up {
+          padding-bottom: 0;
+        }
+      }
+
+      li {
+        &:first-child {
+          color: $yellow;
+          font-weight: $medium;
+          font-size: 1.5rem;
+        }
+
+        &:not(:last-of-type) {
+          padding-bottom: 8px;
+        }
+
+        &:first-of-type {
+          padding-bottom: 12px;
+        }
+
+        a {
+          color: $white-100;
+          font-weight: $regular;
+        }
+      }
+
+      .contact {
+        padding-bottom: 8px;
+
+        a,
+        span {
+          color: $white-100;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
 }
