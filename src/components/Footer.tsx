@@ -5,8 +5,8 @@ import { Call, Email, LocationOn } from "@mui/icons-material";
 
 export const Footer = () => {
   return (
-    <footer>
-      <div className="container">
+    <footer className="mt-40">
+      <div className="container py-16 lg:py-20">
         <ul>
           <li>Adres</li>
           <li>Przedsiębiorstwo Wielobranżowe „HEMET”</li>

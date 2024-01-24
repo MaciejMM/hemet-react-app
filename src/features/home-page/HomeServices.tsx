@@ -33,14 +33,14 @@ export const HomeServices = () => {
   ];
 
   return (
-    <div className="container main-services">
-      <div className="title">Nasze usługi</div>
+    <div className="container main-services pb-16 lg:py-20 lg:grid lg:grid-cols-2 lg:gap-x-8">
       <img
-        className="service-img lightbox h-full"
+        className="hidden lg:block lg:col-start-1 lg:col-end-2 lg:h-full lg:object-cover"
         src={"images/IMG_20190704_121515.jpg"}
         alt=""
       ></img>
-      <main>
+      <main className="lg:col-start-2 lg:col-end-3 lg:flex lg:flex-col lg:justify-center">
+        <div className="title">Nasze usługi</div>
         {services.map((service, index) => {
           return (
             <div className="card" key={index}>

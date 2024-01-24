@@ -17,7 +17,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
 
   return (
     <div className="p-card" key={props.index}>
-      <img className="lightbox" src={img} alt=""></img>
+      <img src={img} alt=""></img>
       <div className="project">
         <div className="project__company">
           {name} <span>{city}</span>

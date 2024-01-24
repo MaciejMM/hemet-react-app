@@ -9,7 +9,7 @@ export const ContactPage = () => {
   return (
     <div>
       <Breadcrumb title={CONTACT_TITLE}></Breadcrumb>
-      <div className="container main-contact">
+      <div className="container main-contact py-16 lg:py-20">
         <img
           src={"images/pexels-hassan-ouajbir-804065.jpg"}
           className="lightbox"

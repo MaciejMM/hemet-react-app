@@ -4,7 +4,7 @@ import { Call, Email, LocationOn } from "@mui/icons-material";
 
 export const HomeContact = () => {
   return (
-    <div className="container main-contact">
+    <div className="container main-contact py-16 lg:py-20">
       <img
         src={"images/pexels-hassan-ouajbir-804065.jpg"}
         className="lightbox"

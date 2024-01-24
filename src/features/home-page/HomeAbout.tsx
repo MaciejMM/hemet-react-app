@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 export const HomeAbout = () => {
   return (
-    <div className="container main-about">
+    <div className="container main-about py-16 lg:py-20">
       <img
         src={"images/IMG_20210318_115012.jpg"}
         alt=""

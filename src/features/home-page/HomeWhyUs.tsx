@@ -26,23 +26,23 @@ export const HomeWhyUs = () => {
 
   const sectionStyle = {
     backgroundColor: "rgb(242,245,247)",
-    paddingTop: "80px",
-    paddingBottom: "80px",
+    paddingTop: "",
+    paddingBottom: "",
   };
 
   return (
-    <div style={sectionStyle}>
-      <div className="container main-why_us">
+    <div style={sectionStyle} className="py-16 lg:py-20">
+      <div className="container main-why_us lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8">
         <img
-          className="lightbox"
+          className="h-2/6 w-full lg:col-start-1 lg:col-end-2 lg:!h-full !min-w-full object-cover"
           src={"images/IMG_20180608_132959.jpg"}
           alt=""
         ></img>
-        <main>
+        <main className=" lg:col-start-2 lg:col-end-3 ">
           <div className="title text-5xl">Dlaczego my</div>
           {whyUsList.map((value, index) => {
             return (
-              <div className="card shadow-mb8" key={index}>
+              <div className="card p-4 mb-4 last:mb-0 shadow-mb8 " key={index}>
                 <div className="card__title">{value.title}</div>
                 <div className="card__text text">{value.textContent}</div>
               </div>

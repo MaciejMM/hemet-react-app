@@ -1,10 +1,10 @@
 import React from "react";
+import { HomeContact } from "./HomeContact";
+import { HomeWhyUs } from "./HomeWhyUs";
 import { HomeMain } from "./HomeMain";
 import { HomeAbout } from "./HomeAbout";
-import { HomeStats } from "./HomeStats";
 import { HomeServices } from "./HomeServices";
-import { HomeWhyUs } from "./HomeWhyUs";
-import { HomeContact } from "./HomeContact";
+import { HomeStats } from "./HomeStats";
 
 export const HomePage = () => {
   return (
@@ -14,7 +14,6 @@ export const HomePage = () => {
       <HomeStats />
       <HomeServices />
       <HomeWhyUs />
-      {/*<HomeProjects/>*/}
       <HomeContact />
     </div>
   );
