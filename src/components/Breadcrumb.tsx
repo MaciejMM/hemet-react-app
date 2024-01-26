@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type BreadcrumbProps = {
   title: string;
@@ -7,7 +7,7 @@ type BreadcrumbProps = {
 export const Breadcrumb = (props: BreadcrumbProps) => {
   return (
     <div className="container">
-      <ul className="breadcrumb">
+      <ul className="breadcrumb lg:pt-40">
         <li>
           <a href="/">Strona główna</a>
         </li>

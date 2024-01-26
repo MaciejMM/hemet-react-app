@@ -23,6 +23,7 @@ header {
       font-weight: $medium;
       color: $black-50;
     }
+
     ul {
       display: none;
       list-style: none;
@@ -33,11 +34,13 @@ header {
 
       li {
         min-width: 100px;
+
         a {
           color: $black-50;
           @include for-tablet-landscape-up {
             margin-left: 44px !important;
           }
+
           &:hover {
             color: $black-75;
             font-weight: $bolder;
@@ -70,12 +73,14 @@ header {
       padding-right: 15px;
       list-style: none;
       padding-bottom: 112px;
+
       li {
         border-bottom: 1px solid rgba(128, 128, 128, 0.2);
         height: 50px;
         display: flex;
         flex-direction: row;
         align-items: center;
+
         a {
           display: flex;
           align-items: flex-end;
@@ -92,14 +97,17 @@ header {
 .transparent-nav {
   background-color: transparent !important;
   border-bottom: none;
+
   .container {
     a {
       color: $white-100;
     }
   }
+
   .head-title {
     color: $white-100 !important;
   }
+
   .material-icons {
     color: $white-100 !important;
   }

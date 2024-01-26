@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { getAllRoutes } from "../services/route-service";
-import { Call, Email, LocationOn } from "@mui/icons-material";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { getAllRoutes } from '../services/route-service';
+import { Call, Email, LocationOn } from '@mui/icons-material';
 
 export const Footer = () => {
   return (
-    <footer className="mt-40">
+    <footer className="bg-hm-black75">
       <div className="container py-16 lg:py-20">
         <ul>
           <li>Adres</li>

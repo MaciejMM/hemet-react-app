@@ -1,10 +1,33 @@
 import React from 'react';
+import styled from '@emotion/styled';
 
 type HomeWhyContent = {
   title: string;
   textContent: string;
   tooltip: boolean;
 };
+
+const CardDiv = styled.div`
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s;
+  background-color: white;
+
+  &:hover {
+    box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    color: $black-75;
+    font-size: 1.4rem;
+    font-weight: $medium;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    color: $black-50;
+  }
+`;
+
 export const HomeWhyUs = () => {
   const whyUsList: HomeWhyContent[] = [
     {
@@ -40,10 +63,10 @@ export const HomeWhyUs = () => {
           <div className="title text-5xl">Dlaczego my</div>
           {whyUsList.map((value, index) => {
             return (
-              <div className="card p-4 mb-4 last:mb-0 shadow-mb8 " key={index}>
-                <div className="card__title">{value.title}</div>
+              <CardDiv className="card p-4 mb-4 last:mb-0 shadow-mb8 " key={index}>
+                <div className="card__title font-bold pb-4">{value.title}</div>
                 <div className="card__text text">{value.textContent}</div>
-              </div>
+              </CardDiv>
             );
           })}
         </main>

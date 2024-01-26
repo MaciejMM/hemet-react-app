@@ -1,8 +1,20 @@
 import React from 'react';
+import styled from '@emotion/styled';
+import { PageTitle } from '../../components/PageTitle';
 
 type Service = {
   name: string;
 };
+
+const ServiceCard = styled.div`
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s;
+  background-color: $white-100;
+
+  &:hover {
+    box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.1);
+  }
+`;
 
 export const HomeServices = () => {
   const services: Service[] = [
@@ -31,7 +43,8 @@ export const HomeServices = () => {
       name: 'Wyroby ze stali kwasoodpornej i węglowej',
     },
   ];
-
+  const HOME_SERVICES_TEXT = 'Nasze usługi';
+  
   return (
     <div className="container main-services pb-16 lg:py-20 lg:grid lg:grid-cols-2 lg:gap-x-8">
       <img
@@ -40,15 +53,15 @@ export const HomeServices = () => {
         alt=""
       ></img>
       <main className="lg:col-start-2 lg:col-end-3 lg:flex lg:flex-col lg:justify-center">
-        <div className="title">Nasze usługi</div>
+        <PageTitle title={HOME_SERVICES_TEXT}></PageTitle>
         {services.map((service, index) => {
           return (
-            <div className="card px-4" key={index}>
-              <div className="card-title">
-                <img src={'images/red-crane-services.svg'} alt=""></img>
+            <ServiceCard className="card px-4  mb-2 last:mb-0" key={index}>
+              <div className="card-title flex items-center text-hm-black75 py-6 text-base font-bold">
+                <img className="h-6 w-6 mr-3" src={'images/red-crane-services.svg'} alt=""></img>
                 {service.name}
               </div>
-            </div>
+            </ServiceCard>
           );
         })}
       </main>
