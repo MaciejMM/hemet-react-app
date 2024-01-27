@@ -5,7 +5,7 @@ export const AboutPictures = () => {
     <div className="bg-hm-lightgrey py-16 lg:py-20">
       <div className="container grid grid-cols-2 gap-4 lg:gap-8">
         <img
-          className="rounded-md aspect-square w-full h-full object-fill"
+          className="rounded-md aspect-square w-full h-full object-cover"
           src={'images/IMG_20180802_111201.jpg'}
           alt=""
         />

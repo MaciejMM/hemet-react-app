@@ -1,10 +1,14 @@
 import React from 'react';
 import { PageTitle } from '../../components/PageTitle';
 
+type Trusted = {
+  name: string;
+  city: string;
+};
 export const AboutCooperation = () => {
-  const ABOUT_COOPERATION_TITLE = 'Zaufali nam';
+  const ABOUT_COOPERATION_TITLE: string = 'Zaufali nam';
 
-  const trustedCompanies = [
+  const trustedCompanies: Trusted[] = [
     {
       name: 'EXIM Sp. z o.o.',
       city: 'Poznań',

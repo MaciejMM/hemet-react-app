@@ -57,7 +57,7 @@ export const HomeServices = () => {
         {services.map((service, index) => {
           return (
             <ServiceCard className="card px-4  mb-2 last:mb-0" key={index}>
-              <div className="card-title flex items-center text-hm-black75 py-6 text-base font-semibold rounded-md">
+              <div className="card-title flex items-center text-hm-black75 py-6 text-base font-semibold rounded-md ">
                 <img className="h-6 w-6 mr-3" src={'images/red-crane-services.svg'} alt=""></img>
                 {service.name}
               </div>

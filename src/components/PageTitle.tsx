@@ -22,7 +22,9 @@ type PageTitleProps = {
 };
 
 export const PageTitle = (props: PageTitleProps) => {
-  const classStyle = `text-${props.color == undefined ? 'hm-black90' : props.color} text-3xl xl:text-hm-title font-bolder ${!props.disablePaddingTop ? 'py-12 xl:py-18' : 'pb-12 xl:pb-18'} `;
+  const color = props.color === undefined ? 'hm-black90' : props.color;
+  const disablePadding = !props.disablePaddingTop ? 'py-12 xl:py-18' : 'pb-12 xl:pb-18';
 
+  const classStyle = `text-${color} text-3xl xl:text-hm-title font-bolder ${disablePadding} `;
   return <PageTitleDiv className={classStyle}>{props.title}</PageTitleDiv>;
 };

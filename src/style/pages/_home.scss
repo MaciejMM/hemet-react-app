@@ -120,33 +120,3 @@
     }
   }
 }
-
-
-.main-contact {
-
-  main {
-
-    h3 {
-      font-size: 24px;
-      color: $black-75;
-      margin-bottom: 4px;
-    }
-
-    p {
-      padding-bottom: 24px;
-    }
-
-    .contact {
-      //color: $orange-soda;
-      font-size: 1.2em;
-      margin-top: 16px;
-
-      a,
-      span {
-        //margin-left: 32px;
-        color: $black-75;
-        font-weight: $bolder;
-      }
-    }
-  }
-}

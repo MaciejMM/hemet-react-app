@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './features/home-page/HomePage';
 import { ContactPage } from './features/contact-page/ContactPage';
 import { AboutPage } from './features/about-page/AboutPage';
-import { ProjectPage } from './features/projects/ProjectPage';
+import { ProjectPage } from './features/projects-page/ProjectPage';
 import { ServicesPage } from './features/services-page/ServicesPage';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';

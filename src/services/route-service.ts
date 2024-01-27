@@ -1,7 +1,7 @@
 import { ContactPage } from '../features/contact-page/ContactPage';
 import { AboutPage } from '../features/about-page/AboutPage';
 import { ServicesPage } from '../features/services-page/ServicesPage';
-import { ProjectPage } from '../features/projects/ProjectPage';
+import { ProjectPage } from '../features/projects-page/ProjectPage';
 
 export type LinkParam = {
   path: string;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { getAllRoutes, LinkParam } from '../services/route-service';
-import { Call, Email, LocationOn } from '@mui/icons-material';
+import { Call, Email, LocationOn, Person } from '@mui/icons-material';
 
 export const Footer = () => {
   return (
@@ -37,7 +37,7 @@ export const Footer = () => {
           ))}
         </ul>
 
-        <ul className="list-none text-hm-black10 col-span-2 md:col-start-2 md:col-end-4  lg:col-start-1 lg:col-end-3">
+        <ul className="list-none text-hm-black10 col-span-2 ">
           <li className="text-hm-yellow text-footer-title font-medium pb-3">Kontakt</li>
           <li className="contact call pb-2 text-white">
             <Call className="mr-4 text-hm-yellow"></Call>
@@ -54,6 +54,48 @@ export const Footer = () => {
           <li className="contact location pb-2 text-white">
             <LocationOn className="mr-4 text-hm-yellow"></LocationOn>
             <span>Stare Bojanowo ul. Przemysłowa 1, 64-030 Śmigiel</span>
+          </li>
+        </ul>
+
+        <ul className="list-none text-hm-black10 col-span-2 lg:row-start-3">
+          <li className="text-hm-yellow text-footer-title font-medium pb-3">Dział handlowy</li>
+          <li className="contact location pb-2 text-white">
+            <Person className="mr-4 text-hm-yellow"></Person>
+            <span>Aleksandra Daros</span>
+          </li>
+
+          <li className="contact email pb-2 text-white">
+            <Email className="mr-4 text-hm-yellow"></Email>
+            <Link className="text-white" to="mailto:aleksandra.daros@hemet.hg.pl">
+              aleksandra.daros@hemet.hg.pl
+            </Link>
+          </li>
+          <li className="contact call pb-2 text-white">
+            <Call className="mr-4 text-hm-yellow"></Call>
+            <Link className="text-white" to="tel:+48600432556">
+              +48 600 432 556
+            </Link>
+          </li>
+        </ul>
+
+        <ul className="list-none text-hm-black10 col-span-2 lg:row-start-3">
+          <li className="text-hm-yellow text-footer-title font-medium pb-3">Dział techniczno-handlowy</li>
+          <li className="contact location pb-2 text-white">
+            <Person className="mr-4 text-hm-yellow"></Person>
+            <span>Tomasz Zapłata</span>
+          </li>
+
+          <li className="contact email pb-2 text-white">
+            <Email className="mr-4 text-hm-yellow"></Email>
+            <Link className="text-white" to="mailto:tomasz.zaplata@hemet.hg.pl">
+              tomasz.zaplata@hemet.hg.p
+            </Link>
+          </li>
+          <li className="contact call  text-white ">
+            <Call className="mr-4 text-hm-yellow"></Call>
+            <Link className="text-white" to="tel:+48600432556">
+              +48 600 432 556
+            </Link>
           </li>
         </ul>
       </div>
