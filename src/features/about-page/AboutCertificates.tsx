@@ -10,7 +10,7 @@ export const AboutCertificates = () => {
           <PageTitle title={CERTIFICATES_TITLE}></PageTitle>
         </div>
 
-        <div className="text-xl col-start-2 col-end-5 row-start-2 row-end-3 min pb-6">
+        <div className="text-lg font-bolder col-start-2 col-end-5 row-start-2 row-end-3 min pb-6">
           Posiadamy certyfikaty nadane przez TUV SUD Polska Sp. z o.o. Warszawa:
         </div>
 

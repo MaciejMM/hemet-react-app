@@ -91,7 +91,7 @@ export const AboutCooperation = () => {
         <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 lg:col-start-3 lg:col-end-9  lg:grid lg:items-center">
           {trustedCompanies.map((company, index) => {
             return (
-              <div key={index} className="pb-4 lg:pb-0">
+              <div key={index} className="pb-4 lg:pb-4">
                 <div className="text-1xl lg:text-1xl text-hm-yellow font-bolder">{company.name}</div>
                 <div className="text-white text-sm lg:text-base ">{company.city}</div>
               </div>

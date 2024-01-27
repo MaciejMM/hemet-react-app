@@ -19,12 +19,15 @@ module.exports = {
       },
       borderColor: {
         light: '#ffffff20',
+        menu: 'rgba(128, 128, 128, 0.2)',
       },
       fontSize: {
         'hm-title': '2.5rem',
         'footer-title': '1.5rem',
       },
-
+      height: {
+        menu: 'calc(100vh - 70px)',
+      },
       gridTemplateRows: {
         custom: 'minmax(250px,auto) min-content',
         'custom-min': 'min-content',
