@@ -19,7 +19,6 @@ const CardDiv = styled.div`
   &__title {
     color: $black-75;
     font-size: 1.4rem;
-    font-weight: $medium;
     margin-bottom: 8px;
   }
 
@@ -47,25 +46,19 @@ export const HomeWhyUs = () => {
     },
   ];
 
-  const sectionStyle = {
-    backgroundColor: 'rgb(242,245,247)',
-    paddingTop: '',
-    paddingBottom: '',
-  };
-
   return (
-    <div style={sectionStyle} className="py-16 lg:py-20">
+    <div className="py-16 lg:py-20 bg-hm-lightgrey">
       <div className="container main-why_us lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8">
         <div className="aspect-video bg-lime-200 lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:aspect-auto">
-          <img className="h-full w-full object-fill" src={'images/IMG_20180608_132959.jpg'} alt=""></img>
+          <img className="h-full w-full object-fill rounded-md" src={'images/IMG_20180608_132959.jpg'} alt=""></img>
         </div>
         <main className=" lg:col-start-1 lg:col-end-2 ">
           <div className="title text-5xl">Dlaczego my</div>
           {whyUsList.map((value, index) => {
             return (
-              <CardDiv className="card p-4 mb-4 last:mb-0 shadow-mb8 " key={index}>
-                <div className="card__title font-bold pb-4">{value.title}</div>
-                <div className="card__text text">{value.textContent}</div>
+              <CardDiv className="card p-4 mb-4 last:mb-0 shadow-mb8 rounded-md" key={index}>
+                <div className="card__title font-bold pb-2">{value.title}</div>
+                <div className="card__text text-hm-black50  leading-7">{value.textContent}</div>
               </CardDiv>
             );
           })}

@@ -44,11 +44,11 @@ export const HomeServices = () => {
     },
   ];
   const HOME_SERVICES_TEXT = 'Nasze usługi';
-  
+
   return (
     <div className="container main-services pb-16 lg:py-20 lg:grid lg:grid-cols-2 lg:gap-x-8">
       <img
-        className="hidden lg:block lg:col-start-1 lg:col-end-2 lg:h-full lg:object-cover"
+        className="hidden lg:block lg:col-start-1 lg:col-end-2 lg:h-full lg:object-cover rounded-md"
         src={'images/IMG_20190704_121515.jpg'}
         alt=""
       ></img>
@@ -57,7 +57,7 @@ export const HomeServices = () => {
         {services.map((service, index) => {
           return (
             <ServiceCard className="card px-4  mb-2 last:mb-0" key={index}>
-              <div className="card-title flex items-center text-hm-black75 py-6 text-base font-bold">
+              <div className="card-title flex items-center text-hm-black75 py-6 text-base font-semibold rounded-md">
                 <img className="h-6 w-6 mr-3" src={'images/red-crane-services.svg'} alt=""></img>
                 {service.name}
               </div>

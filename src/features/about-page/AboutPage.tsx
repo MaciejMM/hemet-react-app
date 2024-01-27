@@ -1,36 +1,63 @@
 import React from 'react';
 import { Breadcrumb } from '../../components/Breadcrumb';
 import { PageTitle } from '../../components/PageTitle';
+import { AboutCertificates } from './AboutCertificates';
+import { AboutCooperation } from './AboutCooperation';
+import styled from '@emotion/styled';
+import { AboutPictures } from './AboutPictures';
+
+const Dot = styled.span`
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  background-color: #fed50a;
+  border-radius: 100px;
+`;
 
 export const AboutPage = () => {
   const ABOUT_TITLE = 'O nas';
 
   return (
-    <div className="pb-32">
+    <div className="">
       <Breadcrumb title={ABOUT_TITLE}></Breadcrumb>
-      <div className="container">
-        <PageTitle title={ABOUT_TITLE}></PageTitle>
-        <div className="about-grid">
-          <div className="about-text text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor feugiat et consequat augue. Pellentesque id
-            nec tellus, dictum fringilla. Egestas vel sed urna praesent est. Varius enim aenean dolor id magna
-            venenatis, hendrerit. Pellentesque amet diam pellentesque sed. Iaculis rhoncus tortor egestas nunc enim quam
-            dictum rutrum. Pellentesque nisl aliquet volutpat proin mi diam. Non rhoncus facilisi turpis id nibh nibh et
-            sed.
+      <div className="py-16 lg:py-20">
+        <div className="container grid grid-cols-1 grid-rows-custom lg:grid-cols-2  gap-x-8">
+          <div className="row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
+            <PageTitle title={ABOUT_TITLE}></PageTitle>
+            <p className="mb-4 font-semibold leading-7">
+              Firma <span>Hemet</span> Henryk Gałecki istnieje na rynku od 2003 noku. Naszą firmę tworzą ludzie z pasją
+              i dobrą energią.
+            </p>
+            <p className="mb-4 text-hm-black90 leading-7">
+              Zajmujemy się produkcją i montażem wielofunkcyjnych hal stalowych dla szerokiego zakresu branż m.in.:
+            </p>
+            <ul className="">
+              <li className="mb-4 flex flex-row items-center text-hm-black75">
+                <Dot className="mr-4"></Dot>hale i obiekty stalowe
+              </li>
+              <li className="mb-4 flex flex-row items-center text-hm-black75">
+                <Dot className="mr-4"></Dot>obiekty magazynowe
+              </li>
+              <li className="mb-4 flex flex-row items-center text-hm-black75">
+                <Dot className="mr-4"></Dot>hale produkcyjne, hale obsługowe
+              </li>
+              <li className="mb-4 flex flex-row items-center text-hm-black75">
+                <Dot className="mr-4"></Dot>obiekty użyteczności publicznej
+              </li>
+            </ul>
+            <p className="leading-7">
+              Możemy pochwalić się dużymi osiągnięciami w wykonawstwie najbardziej skomplikowanych konstrukcji stalowych
+              i montażu na terenie całego kraju i zagranicą.
+            </p>
           </div>
-          <img src={'images/IMG_20180802_111201.jpg'} alt="" className="pic-1"></img>
-          <img src={'images/IMG_20180625_151921.jpg'} alt="" className="pic-2"></img>
-
-          <div className=" about-add text">
-            Pretium sem ornare facilisis nibh maecenas. Consequat semper scelerisque arcu id nulla. Interdum magna
-            scelerisque consequat turpis nisl ac. Ac sit amet, maecenas pellentesque leo. In at vulputate tincidunt
-            turpis cras sed leo, malesuada. Urna, libero urna, dolor mauris. Laoreet eleifend eget nec vestibulum. Arcu
-            eu suspendisse consectetur ut lacinia lorem sem.
+          <div className="row-start-1 row-end-2 w-full h-full object-fill lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 ">
+            <img className="rounded-md w-full h-full " src={'images/IMG_20180625_151921.jpg'} alt="" />
           </div>
-
-          <img src={'images/IMG_20191030_112518.jpg'} alt="" className="pic-3"></img>
         </div>
       </div>
+      <AboutPictures></AboutPictures>
+      <AboutCooperation></AboutCooperation>
+      <AboutCertificates></AboutCertificates>
     </div>
   );
 };

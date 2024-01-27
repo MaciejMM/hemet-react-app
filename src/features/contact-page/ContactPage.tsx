@@ -12,7 +12,7 @@ export const ContactPage = () => {
       <Breadcrumb title={CONTACT_TITLE}></Breadcrumb>
       <div className="container main-contact py-16 md:py-20 md:grid md:grid-cols-2 md:gap-x-8">
         <div className="md:col-start-1 md:col-end-2 md:h-full aspect-video md:aspect-auto">
-          <img src={'images/pexels-hassan-ouajbir-804065.jpg'} className="h-full" alt=""></img>
+          <img src={'images/pexels-hassan-ouajbir-804065.jpg'} className="h-full rounded-md" alt=""></img>
         </div>
         <main className="md:col-start-2 md:col-end-3">
           <PageTitle title={CONTACT_TITLE}></PageTitle>

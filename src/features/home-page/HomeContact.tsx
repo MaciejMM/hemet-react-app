@@ -6,7 +6,11 @@ export const HomeContact = () => {
   return (
     <div className="container main-contact md:grid md:grid-cols-2 py-16 lg:py-20 md:grid-rows-1 md:gap-x-8">
       <div className="aspect-video w-full md:h-full md:col-start-1 md:col-end-2">
-        <img src={'images/pexels-hassan-ouajbir-804065.jpg'} className="w-full md:h-full object-fill" alt=""></img>
+        <img
+          src={'images/pexels-hassan-ouajbir-804065.jpg'}
+          className="w-full md:h-full object-fill rounded-md"
+          alt=""
+        ></img>
       </div>
 
       <main className="flex flex-col md:col-start-2 md:col-end-3">
@@ -14,15 +18,15 @@ export const HomeContact = () => {
         <h3 className="question">Masz pytanie?</h3>
         <p className="question-text">Napisz do nas, a nasz zespół odezwie się do Ciebie w ciągu 24 godzin.</p>
         <div className="contact call">
-          <Call></Call>
+          <Call className="mr-4 text-hm-yellow"></Call>
           <Link to="tel:+48655120722">+48 655 120 722</Link>
         </div>
-        <div className="contact email">
-          <Email></Email>
+        <div className="contact email ">
+          <Email className="mr-4 text-hm-yellow"></Email>
           <Link to="mailto:hemet@hemet.hg.pl">hemet@hemet.hg.pl</Link>
         </div>
         <div className="contact location">
-          <LocationOn></LocationOn>
+          <LocationOn className="mr-4 text-hm-yellow"></LocationOn>
           <span>Plac Wolności 21, 64-000 Kościan</span>
         </div>
       </main>

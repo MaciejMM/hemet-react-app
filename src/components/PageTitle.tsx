@@ -17,12 +17,12 @@ const PageTitleDiv = styled.div`
 
 type PageTitleProps = {
   title: string;
+  color?: string;
+  disablePaddingTop?: boolean;
 };
 
 export const PageTitle = (props: PageTitleProps) => {
-  return (
-    <PageTitleDiv className="text-hm-black90 text-3xl xl:text-hm-title font-bolder py-12 xl:py-18">
-      {props.title}
-    </PageTitleDiv>
-  );
+  const classStyle = `text-${props.color == undefined ? 'hm-black90' : props.color} text-3xl xl:text-hm-title font-bolder ${!props.disablePaddingTop ? 'py-12 xl:py-18' : 'pb-12 xl:pb-18'} `;
+
+  return <PageTitleDiv className={classStyle}>{props.title}</PageTitleDiv>;
 };

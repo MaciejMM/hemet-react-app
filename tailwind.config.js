@@ -5,11 +5,14 @@ module.exports = {
     extend: {
       colors: {
         'hm-yellow': '#fed50a',
+        'hm-black50': '#808080',
         'hm-black75': '#404040',
         'hm-black90': '#191919',
+        'hm-black10': '#e6e6e6',
       },
       backgroundColor: {
         'hm-black75': '#404040',
+        'hm-lightgrey': 'rgb(242,245,247)',
       },
       borderWidth: {
         1: '1px',
@@ -19,6 +22,12 @@ module.exports = {
       },
       fontSize: {
         'hm-title': '2.5rem',
+        'footer-title': '1.5rem',
+      },
+
+      gridTemplateRows: {
+        custom: 'minmax(250px,auto) min-content',
+        'custom-min': 'min-content',
       },
     },
   },

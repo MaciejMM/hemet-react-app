@@ -1,53 +1,60 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { getAllRoutes } from '../services/route-service';
+import { getAllRoutes, LinkParam } from '../services/route-service';
 import { Call, Email, LocationOn } from '@mui/icons-material';
 
 export const Footer = () => {
   return (
     <footer className="bg-hm-black75">
-      <div className="container py-16 lg:py-20">
-        <ul>
-          <li>Adres</li>
-          <li>Przedsiębiorstwo Wielobranżowe „HEMET”</li>
-          <li>ul. Traugutta 40</li>
-          <li>64-000 Kościan</li>
+      <div className="container py-16 lg:py-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <ul className="list-none text-hm-black10">
+          <li className="text-hm-yellow text-footer-title font-medium pb-3">Adres</li>
+          <li className="pb-2">Przedsiębiorstwo Wielobranżowe „HEMET”</li>
+          <li className="pb-2">ul. Traugutta 40</li>
+          <li className="">64-000 Kościan</li>
         </ul>
-        <ul>
-          <li>Biuro</li>
-          <li>ul. Plac Wolności 21</li>
-          <li>64-000 Kościan</li>
+        <ul className="list-none text-hm-black10">
+          <li className="text-hm-yellow text-footer-title font-medium pb-3">Biuro</li>
+          <li className="pb-2">Stare Bojanowo</li>
+          <li className="pb-2">ul. Przemysłowa 1</li>
+          <li className="">64-030 Śmigiel</li>
         </ul>
-        <ul>
-          <li>Zakład produkcyjny</li>
-          <li>Stare Bojanowo</li>
-          <li>ul. Przemysłowa 1</li>
-          <li>64-030 Śmigiel</li>
+        <ul className="list-none text-hm-black10">
+          <li className="text-hm-yellow text-footer-title font-medium pb-3">Zakład produkcyjny</li>
+          <li className="pb-2">Stare Bojanowo</li>
+          <li className="pb-2">ul. Przemysłowa 1</li>
+          <li className="">64-030 Śmigiel</li>
         </ul>
 
-        <ul>
-          <li>Linki</li>
-          {getAllRoutes().map((route, index) => (
-            <li key={index}>
-              <Link to={route.path}>{route.text}</Link>
+        <ul className="list-none text-hm-black10">
+          <li className="text-hm-yellow text-footer-title font-medium pb-3">Linki</li>
+          {getAllRoutes().map((route: LinkParam, index: number) => (
+            <li key={index} className="text-white font-normal pb-2">
+              <Link className="text-white " to={route.path}>
+                {route.text}
+              </Link>
             </li>
           ))}
         </ul>
 
-        <ul>
-          <li>Kontakt</li>
-          <div className="contact call">
-            <Call></Call>
-            <Link to="tel:+48655120722">+48 655 120 722</Link>
-          </div>
-          <div className="contact email">
-            <Email></Email>
-            <Link to="mailto:hemet@hemet.hg.pl">hemet@hemet.hg.pl</Link>
-          </div>
-          <div className="contact location">
-            <LocationOn></LocationOn>
-            <span>Plac Wolności 21, 64-000 Kościan</span>
-          </div>
+        <ul className="list-none text-hm-black10 col-span-2 md:col-start-2 md:col-end-4  lg:col-start-1 lg:col-end-3">
+          <li className="text-hm-yellow text-footer-title font-medium pb-3">Kontakt</li>
+          <li className="contact call pb-2 text-white">
+            <Call className="mr-4 text-hm-yellow"></Call>
+            <Link className="text-white" to="tel:+48655120722">
+              +48 655 120 722
+            </Link>
+          </li>
+          <li className="contact email pb-2 text-white">
+            <Email className="mr-4 text-hm-yellow"></Email>
+            <Link className="text-white" to="mailto:hemet@hemet.hg.pl">
+              hemet@hemet.hg.pl
+            </Link>
+          </li>
+          <li className="contact location pb-2 text-white">
+            <LocationOn className="mr-4 text-hm-yellow"></LocationOn>
+            <span>Stare Bojanowo ul. Przemysłowa 1, 64-030 Śmigiel</span>
+          </li>
         </ul>
       </div>
     </footer>

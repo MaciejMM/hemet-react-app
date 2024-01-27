@@ -1,31 +1,3 @@
-.project-filters {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-bottom: 1.5rem;
-  color: $black-50;
-  li {
-    list-style: none;
-    text-transform: uppercase;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    @include for-desktop-up {
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    cursor: pointer;
-    &:not(:last-of-type) {
-      margin-right: 1rem;
-    }
-  }
-
-  .active {
-    font-weight: bold;
-    color: $black-90;
-  }
-}
 
 .projects-page {
   margin-bottom: 48px;
@@ -39,6 +11,7 @@
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 80px;
   }
+
   .p-card {
     display: grid;
     grid-template-rows: auto auto;
@@ -64,6 +37,7 @@
         transition: bottom 0.3s;
       }
     }
+
     &:not(:last-of-type) {
       margin-bottom: 20px;
     }
@@ -71,6 +45,7 @@
     &:hover {
       box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.1);
     }
+
     img {
       width: 100%;
       height: 450px;
@@ -101,11 +76,13 @@
         bottom: -86px;
         transition: all 0.3s;
       }
+
       &__name {
         font-size: 20px;
         color: $white-100;
         font-weight: $medium;
       }
+
       &__company {
         font-size: 0.9rem;
         color: $black-10;
@@ -119,6 +96,7 @@
       }
     }
   }
+
   .p-card:hover .project {
     bottom: 0;
     transition: bottom 0.3s !important;
