@@ -32,7 +32,7 @@ export const Header = () => {
             </li>
           ))}
         </ul>
-        <span className=" md:hidden">
+        <span className="md:hidden">
           {showMenu ? (
             <Close className="close-icon text-hm-black50 cursor-pointer" onClick={handleClick}></Close>
           ) : (
