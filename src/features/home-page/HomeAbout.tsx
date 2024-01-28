@@ -11,7 +11,7 @@ export const HomeAbout = () => {
       <main className="col-span-1 grid ">
         <PageTitle title={'O nas'}></PageTitle>
         <p className="mb-4 font-semibold leading-7">
-          Firma <span>"Hemet"</span> Henryk Gałecki istnieje na rynku od 2003 noku. Naszą firmę tworzą ludzie z pasją i
+          Firma <span>"Hemet"</span> Henryk Gałecki istnieje na rynku od 2003 roku. Naszą firmę tworzą ludzie z pasją i
           dobrą energią.
         </p>
         <p className="mb-4 leading-7 text-hm-black90">Zajmujemy się produkcją i montażem...</p>
