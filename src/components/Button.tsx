@@ -16,8 +16,7 @@ type LinkProps = {
 
 export const LinkButton = (props: LinkProps) => {
   const buttonBorder = !props.disableBorder ? 'hover:border-2 hover:border-hm-yellow' : '';
-  const buttonClass = `
-  text-hm-black90 bg-hm-yellow hover:bg-hm-black75 ${buttonBorder} hover:text-hm-yellow h-14 grid items-center
+  const buttonClass = `text-hm-black90 bg-yellow-hm hover:bg-hm-black75 ${buttonBorder} hover:text-hm-yellow h-14 grid items-center
   justify-center min-w-[150px] md:w-[300px] font-bold rounded-md uppercase`;
 
   return (

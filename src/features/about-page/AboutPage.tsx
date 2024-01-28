@@ -25,7 +25,7 @@ export const AboutPage = () => {
           <div className="row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
             <PageTitle title={ABOUT_TITLE}></PageTitle>
             <p className="mb-4 font-semibold leading-7">
-              Firma <span>Hemet</span> Henryk Gałecki istnieje na rynku od 2003 noku. Naszą firmę tworzą ludzie z pasją
+              Firma <span>Hemet</span> Henryk Gałecki istnieje na rynku od 2003 roku. Naszą firmę tworzą ludzie z pasją
               i dobrą energią.
             </p>
             <p className="mb-4 leading-7 text-hm-black90">

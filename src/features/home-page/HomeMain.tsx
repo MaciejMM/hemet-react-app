@@ -20,11 +20,29 @@ const HemetH1 = styled.h1`
   }
 `;
 
+const HomeDiv = styled.div`
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -50;
+  }
+
+  img {
+    z-index: -100;
+    object-position: 50% 50%;
+  }
+`;
+
 export const HomeMain = () => {
   return (
-    <div className="home-main">
-      <img src={'images/DJI_0430.jpg'} alt=""></img>
-      <div className="m-auto flex h-full max-w-c-xl flex-col justify-center px-4">
+    <HomeDiv className="home-main relative h-[100vh] w-full">
+      <img className="absolute left-0 top-0 h-full w-full object-cover" src={'images/DJI_0430.jpg'} alt=""></img>
+      <div className="m-auto flex h-full w-full max-w-c-xl flex-col justify-center px-4">
         <p className="text-3xl font-medium uppercase text-hm-black10">Konstrukcje stalowe</p>
         <HemetH1 className="text-9xl">HEMET</HemetH1>
         <div className="description mb-20 text-xl font-medium uppercase text-hm-black10 lg:text-3xl">
@@ -35,6 +53,6 @@ export const HomeMain = () => {
           <LinkButton title={'Kontakt'} pageLink={'/contacts'}></LinkButton>
         </div>
       </div>
-    </div>
+    </HomeDiv>
   );
 };

@@ -9,10 +9,36 @@ module.exports = {
         'hm-black75': '#404040',
         'hm-black90': '#191919',
         'hm-black10': '#e6e6e6',
+        black: {
+          10: '#e6e6e6',
+          25: '#bfbfbf',
+          50: '#808080',
+          75: '#404040',
+          90: '#191919',
+        },
+        yellow: {
+          hm: '#fed50a',
+          50: '#FED50A4C',
+          70: '#FED50AB2',
+          90: '#FED50AE5',
+        },
       },
       backgroundColor: {
         'hm-black75': '#404040',
         'hm-lightgrey': 'rgb(242,245,247)',
+        black: {
+          10: '#e6e6e6',
+          25: '#bfbfbf',
+          50: '#808080',
+          75: '#404040',
+          90: '#191919',
+        },
+        yellow: {
+          hm: '#fed50a',
+          50: '#FED50A4C',
+          70: '#FED50AB2',
+          90: '#FED50AE5',
+        },
       },
       borderWidth: {
         1: '1px',
