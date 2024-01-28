@@ -34,7 +34,7 @@ export const HomeMain = () => {
         </div>
         <div className=" w-full flex flex-col gap-8 md:flex-row ">
           <LinkButton title={'Nasze projekty'} pageLink={'/projects'}></LinkButton>
-          <LinkButton title={'kontakt'} pageLink={'/contacts'}></LinkButton>
+          <LinkButton title={'Kontakt'} pageLink={'/contacts'}></LinkButton>
         </div>
       </div>
     </div>

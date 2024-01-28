@@ -46,9 +46,9 @@ export const HomeServices = () => {
   const HOME_SERVICES_TEXT = 'Nasze usługi';
 
   return (
-    <div className="max-w-c-xl m-auto px-4 main-services pb-16 lg:py-20 lg:grid lg:grid-cols-2 lg:gap-x-8">
+    <div className="main-services m-auto max-w-c-xl px-4 pb-16 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-20">
       <img
-        className="hidden lg:block lg:col-start-1 lg:col-end-2 lg:h-full lg:object-cover rounded-md"
+        className="hidden rounded-md lg:col-start-1 lg:col-end-2 lg:block lg:h-full lg:object-cover"
         src={'images/IMG_20190704_121515.jpg'}
         alt=""
       ></img>
@@ -56,9 +56,9 @@ export const HomeServices = () => {
         <PageTitle title={HOME_SERVICES_TEXT}></PageTitle>
         {services.map((service, index) => {
           return (
-            <ServiceCard className="card px-4  mb-2 last:mb-0" key={index}>
-              <div className="card-title flex items-center text-hm-black75 py-6 text-base font-semibold rounded-md ">
-                <img className="h-6 w-6 mr-3" src={'images/red-crane-services.svg'} alt=""></img>
+            <ServiceCard className="card mb-2  px-4 last:mb-0" key={index}>
+              <div className="card-title flex items-center rounded-md py-6 text-base font-semibold text-hm-black75 ">
+                <img className="mr-3 h-6 w-6" src={'images/red-crane-services.svg'} alt=""></img>
                 {service.name}
               </div>
             </ServiceCard>
