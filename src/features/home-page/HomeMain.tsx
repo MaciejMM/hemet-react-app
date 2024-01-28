@@ -14,9 +14,9 @@ const HemetH1 = styled.h1`
     bottom: -6px;
     border-radius: 1px;
     left: 0;
-    width: 300px;
+    width: 100%;
     background-color: #fed50a;
-    height: 5px;
+    height: 8px;
   }
 `;
 
@@ -44,7 +44,7 @@ export const HomeMain = () => {
       <img className="absolute left-0 top-0 h-full w-full object-cover" src={'images/DJI_0430.jpg'} alt=""></img>
       <div className="m-auto flex h-full w-full max-w-c-xl flex-col justify-center px-4">
         <p className="text-3xl font-medium uppercase text-hm-black10">Konstrukcje stalowe</p>
-        <HemetH1 className="text-9xl">HEMET</HemetH1>
+        <HemetH1 className="w-min text-9xl ">HEMET</HemetH1>
         <div className="description mb-20 text-xl font-medium uppercase text-hm-black10 lg:text-3xl">
           20 lat doświadczenia w budowaniu <span className="text-hm-yellow">konstrukcji stalowych</span>
         </div>
