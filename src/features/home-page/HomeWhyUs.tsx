@@ -42,7 +42,7 @@ export const HomeWhyUs = () => {
     },
     {
       title: 'Park maszynowy',
-      textContent: `Posiadamy własny park maszynowy. Znajdują sie tam m.in. dźwigi oraz podnośniki. Zapewnia nam to pełną niezależność.`,
+      textContent: `Posiadamy własny park maszynowy. Znajdują się tam m.in. dźwigi oraz podnośniki. Zapewnia nam to pełną niezależność.`,
       tooltip: false,
     },
   ];

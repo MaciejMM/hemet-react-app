@@ -34,9 +34,13 @@ export const Header = () => {
         </ul>
         <span className="md:hidden">
           {showMenu ? (
-            <Close className="close-icon cursor-pointer text-hm-black50" onClick={handleClick}></Close>
+            <label className="py-4 pl-6" htmlFor="i-close">
+              <Close id="i-close" className="close-icon cursor-pointer text-hm-black50" onClick={handleClick}></Close>
+            </label>
           ) : (
-            <Menu className="menu-icon cursor-pointer text-hm-black50" onClick={handleClick}></Menu>
+            <label className="py-4 pl-6" htmlFor="i-menu">
+              <Menu id="i-menu" className="menu-icon cursor-pointer text-hm-black50" onClick={handleClick}></Menu>
+            </label>
           )}
         </span>
       </nav>
@@ -44,12 +48,15 @@ export const Header = () => {
         <div className="burger-menu top-100 absolute left-0 h-menu w-full bg-white">
           <ul className="px-4">
             {getAllRoutes().map((route, index) => (
-              <li className="flex h-16 flex-row items-center border-b-1 border-b-menu" onClick={hideMenu} key={index}>
-                <Link className="w-full font-bold text-hm-black90" to={route.path}>
-                  {route.text}
-                </Link>
+              <Link
+                onClick={hideMenu}
+                key={index}
+                className="flex h-16 w-full flex-row items-center justify-between border-b-1 border-b-menu font-bold text-hm-black90"
+                to={route.path}
+              >
+                <div>{route.text}</div>
                 <ArrowForward></ArrowForward>
-              </li>
+              </Link>
             ))}
           </ul>
         </div>

@@ -25,11 +25,11 @@ export const AboutPage = () => {
           <div className="row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
             <PageTitle title={ABOUT_TITLE}></PageTitle>
             <p className="mb-4 font-semibold leading-7">
-              Firma <span>Hemet</span> Henryk Gałecki istnieje na rynku od 2003 roku. Naszą firmę tworzą ludzie z pasją
-              i dobrą energią.
+              Firma <span>"Hemet"</span> Henryk Gałecki istnieje na rynku od 2003 roku. Naszą firmę tworzą ludzie z
+              pasją i dobrą energią.
             </p>
             <p className="mb-4 leading-7 text-hm-black90">
-              Zajmujemy się produkcją i montażem wielofunkcyjnych hal stalowych dla szerokiego zakresu branż m.in.:
+              Zajmujemy się produkcją i montażem wielofunkcyjnych hal stalowych dla szerokiego zakresu branż, m.in.:
             </p>
             <ul className="">
               <li className="mb-4 flex flex-row items-center text-hm-black75">
@@ -47,7 +47,7 @@ export const AboutPage = () => {
             </ul>
             <p className="leading-7">
               Możemy pochwalić się dużymi osiągnięciami w wykonawstwie najbardziej skomplikowanych konstrukcji stalowych
-              i montażu na terenie całego kraju i zagranicą.
+              i montażu na terenie całego kraju i za granicą.
             </p>
           </div>
           <div className="row-start-1 row-end-2 h-full w-full object-fill lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 ">

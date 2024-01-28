@@ -70,7 +70,7 @@ export const AboutCooperation = () => {
           <PageTitle title={ABOUT_COOPERATION_TITLE} color={'white'} disablePaddingTop={true}></PageTitle>
         </div>
         <div className="font-bolder pb-4 text-lg text-white   lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:grid lg:items-center lg:border-r-1 lg:border-light lg:pb-0 ">
-          Wykonaliśmy wiele obiektów różnego typu dla takich firm jak:
+          Wykonaliśmy wiele obiektów różnego typu dla firm:
         </div>
         <ul className="grid grid-cols-3 md:grid-cols-5 lg:col-start-3  lg:col-end-9 lg:row-start-2 lg:row-end-2 lg:grid-cols-6">
           {builded.map((build, index) => {
