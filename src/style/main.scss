@@ -1,11 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "abstracts/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: $font-size;
+}
+
+body {
+  width: 100%;
+}
+
 
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/typography';
 
-@import 'components/others';
 
 @import 'pages/home';
