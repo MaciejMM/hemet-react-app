@@ -21,7 +21,7 @@ export const AboutPage = () => {
     <div className="">
       <Breadcrumb title={ABOUT_TITLE}></Breadcrumb>
       <div className="py-16 lg:py-20">
-        <div className="container grid grid-cols-1 grid-rows-custom lg:grid-cols-2  gap-x-8">
+        <div className="max-w-c-xl m-auto px-4 grid grid-cols-1 grid-rows-custom lg:grid-cols-2  gap-x-8">
           <div className="row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
             <PageTitle title={ABOUT_TITLE}></PageTitle>
             <p className="mb-4 font-semibold leading-7">

@@ -5,7 +5,7 @@ export const AboutCertificates = () => {
   const CERTIFICATES_TITLE = 'Certyfikaty';
   return (
     <div className="bg-hm-lightgrey w-full py-16 lg:py-20 ">
-      <div className="container grid grid-cols-4 gap-x-8">
+      <div className="max-w-c-xl m-auto px-4 grid grid-cols-4 gap-x-8">
         <div className=" col-start-2 col-end-5 row-start-1 row-end-2">
           <PageTitle title={CERTIFICATES_TITLE}></PageTitle>
         </div>

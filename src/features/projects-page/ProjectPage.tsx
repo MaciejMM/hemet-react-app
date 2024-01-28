@@ -52,7 +52,7 @@ export const ProjectPage = () => {
   return (
     <div className="">
       <Breadcrumb title={PROJECT_PAGE_TITLE}></Breadcrumb>
-      <div className="container py-16 lg:py-20">
+      <div className="max-w-c-xl m-auto px-4 py-16 lg:py-20">
         <PageTitle title={PROJECT_PAGE_TITLE}></PageTitle>
 
         <div className="grid grid-cols-2 gap-4 xl:gap-8 md:grid-cols-3 ">

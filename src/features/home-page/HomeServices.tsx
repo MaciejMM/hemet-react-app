@@ -46,7 +46,7 @@ export const HomeServices = () => {
   const HOME_SERVICES_TEXT = 'Nasze usługi';
 
   return (
-    <div className="container main-services pb-16 lg:py-20 lg:grid lg:grid-cols-2 lg:gap-x-8">
+    <div className="max-w-c-xl m-auto px-4 main-services pb-16 lg:py-20 lg:grid lg:grid-cols-2 lg:gap-x-8">
       <img
         className="hidden lg:block lg:col-start-1 lg:col-end-2 lg:h-full lg:object-cover rounded-md"
         src={'images/IMG_20190704_121515.jpg'}

@@ -19,7 +19,7 @@ export const Header = () => {
 
   return (
     <header className="w-full fixed bg-white border-b-1 border-b-hm-black10 top-0 z-50">
-      <nav className="container m-auto flex flex-row h-[70px] justify-between items-center">
+      <nav className="max-w-c-xl m-auto px-4 flex flex-row h-[70px] justify-between items-center">
         <a className="head-title text-2xl text-hm-black50 font-medium" href="/">
           HEMET
         </a>

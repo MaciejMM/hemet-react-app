@@ -25,13 +25,13 @@ export const HomeMain = () => {
   return (
     <div className="home-main">
       <img src={'images/DJI_0430.jpg'} alt=""></img>
-      <div className="container">
+      <div className="max-w-c-xl m-auto px-4 h-full flex flex-col justify-center">
         <h3 className="text-xl uppercase text-hm-black10 font-medium">Konstrukcje stalowe</h3>
         <HemetH1 className="md:text-2xl">HEMET</HemetH1>
         <div className="description uppercase text-hm-black10 font-medium mb-4">
           20 lat doświadczenia w budowaniu <span className="text-hm-yellow">konstrukcji stalowych</span>
         </div>
-        <div className="btns w-full flex flex-col sm:flex-row ">
+        <div className="btns w-full flex flex-col gap-8 md:flex-row md:w-1/2">
           <a className="btn btn-xl grid content-center" href="/projects">
             Nasze projekty
           </a>

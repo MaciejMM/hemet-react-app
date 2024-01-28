@@ -22,8 +22,8 @@
     min-height: 50px;
     text-transform: uppercase;
     font-weight: $bolder;
-    @include for-tablet-portrait-up {
-      max-width: 250px;
-    }
+    //@include for-tablet-portrait-up {
+    //  max-width: 250px;
+    //}
   }
 }

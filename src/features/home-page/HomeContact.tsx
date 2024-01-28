@@ -5,7 +5,7 @@ import { PageTitle } from '../../components/PageTitle';
 
 export const HomeContact = () => {
   return (
-    <div className="container main-contact md:grid md:grid-cols-2 py-16 lg:py-20 md:grid-rows-1 md:gap-x-8">
+    <div className="max-w-c-xl m-auto px-4 main-contact md:grid md:grid-cols-2 py-16 lg:py-20 md:grid-rows-1 md:gap-x-8">
       <div className="aspect-video md:aspect-square w-full md:h-full md:col-start-1 md:col-end-2">
         <img
           src={'images/pexels-hassan-ouajbir-804065.jpg'}

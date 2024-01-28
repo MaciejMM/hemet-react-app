@@ -6,7 +6,7 @@ import { Call, Email, LocationOn, Person } from '@mui/icons-material';
 export const Footer = () => {
   return (
     <footer className="bg-hm-black75">
-      <div className="container py-16 lg:py-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="max-w-c-xl m-auto px-4 py-16 lg:py-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <ul className="list-none text-hm-black10">
           <li className="text-hm-yellow text-footer-title font-medium pb-3">Adres</li>
           <li className="pb-2">Przedsiębiorstwo Wielobranżowe „HEMET”</li>

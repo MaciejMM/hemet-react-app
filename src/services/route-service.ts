@@ -1,6 +1,5 @@
 import { ContactPage } from '../features/contact-page/ContactPage';
 import { AboutPage } from '../features/about-page/AboutPage';
-import { ServicesPage } from '../features/services-page/ServicesPage';
 import { ProjectPage } from '../features/projects-page/ProjectPage';
 
 export type LinkParam = {
@@ -12,12 +11,7 @@ export type LinkParam = {
 
 const routes = [
   { path: '/about', text: 'O nas', valid: true, component: AboutPage },
-  {
-    path: '/services',
-    text: 'Usługi',
-    valid: false,
-    component: ServicesPage,
-  },
+
   {
     path: '/projects',
     text: 'Projekty',

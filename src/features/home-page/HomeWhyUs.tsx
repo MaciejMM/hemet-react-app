@@ -49,7 +49,7 @@ export const HomeWhyUs = () => {
 
   return (
     <div className="py-16 lg:py-20 bg-hm-lightgrey">
-      <div className="container  lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8">
+      <div className="max-w-c-xl m-auto px-4   lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8">
         <div className="aspect-video  lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:aspect-auto">
           <img className="h-full w-full object-fill rounded-md" src={'images/IMG_20180608_132959.jpg'} alt=""></img>
         </div>

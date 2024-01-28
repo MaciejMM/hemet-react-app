@@ -32,6 +32,15 @@ module.exports = {
         custom: 'minmax(250px,auto) min-content',
         'custom-min': 'min-content',
       },
+      width: {
+        'container-xl': '1200px',
+      },
+      minWidth: {
+        'container-xl': '1200px',
+      },
+      maxWidth: {
+        'c-xl': '1200px',
+      },
     },
   },
   plugins: [],
