@@ -75,7 +75,10 @@ export const AboutCooperation = () => {
         <ul className="grid grid-cols-3 md:grid-cols-5 lg:col-start-3  lg:col-end-9 lg:row-start-2 lg:row-end-2 lg:grid-cols-6">
           {builded.map((build, index) => {
             return (
-              <li key={index} className="text-1xl lg:text-1xl pb-4 text-hm-yellow  lg:grid lg:items-center  xl:pb-0 ">
+              <li
+                key={index}
+                className="text-1xl lg:text-1xl pb-4 pr-4 text-hm-yellow  lg:grid lg:items-center  xl:pb-0 "
+              >
                 {build}
               </li>
             );
@@ -88,7 +91,7 @@ export const AboutCooperation = () => {
         <div className="grid grid-cols-3 md:grid-cols-5 lg:col-start-3 lg:col-end-9 lg:grid  lg:grid-cols-6 lg:items-center">
           {trustedCompanies.map((company, index) => {
             return (
-              <div key={index} className="pb-4 lg:pb-4">
+              <div key={index} className="pb-4 pr-4 lg:pb-4">
                 <div className="text-1xl lg:text-1xl font-bolder text-hm-yellow">{company.name}</div>
                 <div className="text-sm text-white lg:text-base ">{company.city}</div>
               </div>
