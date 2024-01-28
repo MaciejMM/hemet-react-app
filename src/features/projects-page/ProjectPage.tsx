@@ -50,11 +50,10 @@ export const ProjectPage = () => {
   const PROJECT_PAGE_TITLE = 'Projekty';
 
   return (
-    <div className="">
+    <div className="mt-32 lg:mt-10">
       <Breadcrumb title={PROJECT_PAGE_TITLE}></Breadcrumb>
       <div className="m-auto max-w-c-xl px-4 py-16 lg:py-20">
-        <PageTitle title={PROJECT_PAGE_TITLE}></PageTitle>
-
+        <PageTitle disablePaddingTop={true} title={PROJECT_PAGE_TITLE}></PageTitle>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:gap-8 ">
           {projects.map((project, i) => (
             <ProjectCard key={i} index={i} cardDetails={project}></ProjectCard>

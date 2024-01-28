@@ -18,7 +18,7 @@ export const AboutPage = () => {
   const ABOUT_TITLE = 'O nas';
 
   return (
-    <div className="">
+    <div className="mt-32 lg:mt-10">
       <Breadcrumb title={ABOUT_TITLE}></Breadcrumb>
       <div className="py-16 lg:py-20">
         <div className="m-auto grid max-w-c-xl grid-cols-1 grid-rows-custom gap-x-8 px-4  lg:grid-cols-2">

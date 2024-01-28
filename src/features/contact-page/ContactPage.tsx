@@ -6,7 +6,7 @@ export const ContactPage = () => {
   const CONTACT_TITLE = 'Kontakt';
 
   return (
-    <div>
+    <div className="mt-32 lg:mt-10">
       <Breadcrumb title={CONTACT_TITLE}></Breadcrumb>
       <HomeContact></HomeContact>
     </div>
