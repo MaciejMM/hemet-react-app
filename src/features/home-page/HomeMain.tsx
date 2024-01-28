@@ -26,13 +26,13 @@ export const HomeMain = () => {
   return (
     <div className="home-main">
       <img src={'images/DJI_0430.jpg'} alt=""></img>
-      <div className="max-w-c-xl m-auto px-4 h-full flex flex-col justify-center">
-        <h3 className="text-xl uppercase text-hm-black10 font-medium">Konstrukcje stalowe</h3>
+      <div className="m-auto flex h-full max-w-c-xl flex-col justify-center px-4">
+        <h3 className="text-xl font-medium uppercase text-hm-black10">Konstrukcje stalowe</h3>
         <HemetH1 className="md:text-2xl">HEMET</HemetH1>
-        <div className="description uppercase text-hm-black10 font-medium mb-4">
+        <div className="description mb-4 font-medium uppercase text-hm-black10">
           20 lat doświadczenia w budowaniu <span className="text-hm-yellow">konstrukcji stalowych</span>
         </div>
-        <div className=" w-full flex flex-col gap-8 md:flex-row ">
+        <div className=" flex w-full flex-col gap-8 md:flex-row ">
           <LinkButton title={'Nasze projekty'} pageLink={'/projects'}></LinkButton>
           <LinkButton title={'Kontakt'} pageLink={'/contacts'}></LinkButton>
         </div>

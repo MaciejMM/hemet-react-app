@@ -6,30 +6,30 @@ import { Call, Email, LocationOn, Person } from '@mui/icons-material';
 export const Footer = () => {
   return (
     <footer className="bg-hm-black75">
-      <div className="max-w-c-xl m-auto px-4 py-16 lg:py-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="m-auto grid max-w-c-xl grid-cols-2 gap-8 px-4 py-16 md:grid-cols-3 lg:grid-cols-4 lg:py-20">
         <ul className="list-none text-hm-black10">
-          <li className="text-hm-yellow text-footer-title font-medium pb-3">Adres</li>
+          <li className="pb-3 text-footer-title font-medium text-hm-yellow">Adres</li>
           <li className="pb-2">Przedsiębiorstwo Wielobranżowe „HEMET”</li>
           <li className="pb-2">ul. Traugutta 40</li>
           <li className="">64-000 Kościan</li>
         </ul>
         <ul className="list-none text-hm-black10">
-          <li className="text-hm-yellow text-footer-title font-medium pb-3">Biuro</li>
+          <li className="pb-3 text-footer-title font-medium text-hm-yellow">Biuro</li>
           <li className="pb-2">Stare Bojanowo</li>
           <li className="pb-2">ul. Przemysłowa 1</li>
           <li className="">64-030 Śmigiel</li>
         </ul>
         <ul className="list-none text-hm-black10">
-          <li className="text-hm-yellow text-footer-title font-medium pb-3">Zakład produkcyjny</li>
+          <li className="pb-3 text-footer-title font-medium text-hm-yellow">Zakład produkcyjny</li>
           <li className="pb-2">Stare Bojanowo</li>
           <li className="pb-2">ul. Przemysłowa 1</li>
           <li className="">64-030 Śmigiel</li>
         </ul>
 
         <ul className="list-none text-hm-black10">
-          <li className="text-hm-yellow text-footer-title font-medium pb-3">Linki</li>
+          <li className="pb-3 text-footer-title font-medium text-hm-yellow">Linki</li>
           {getAllRoutes().map((route: LinkParam, index: number) => (
-            <li key={index} className="text-white font-normal pb-2">
+            <li key={index} className="pb-2 font-normal text-white">
               <Link className="text-white " to={route.path}>
                 {route.text}
               </Link>
@@ -37,8 +37,8 @@ export const Footer = () => {
           ))}
         </ul>
 
-        <ul className="list-none text-hm-black10 col-span-2 ">
-          <li className="text-hm-yellow text-footer-title font-medium pb-3">Kontakt</li>
+        <ul className="col-span-2 list-none text-hm-black10 ">
+          <li className="pb-3 text-footer-title font-medium text-hm-yellow">Kontakt</li>
           <li className="contact call pb-2 text-white">
             <Call className="mr-4 text-hm-yellow"></Call>
             <Link className="text-white" to="tel:+48655120722">
@@ -57,8 +57,8 @@ export const Footer = () => {
           </li>
         </ul>
 
-        <ul className="list-none text-hm-black10 col-span-2 lg:row-start-3">
-          <li className="text-hm-yellow text-footer-title font-medium pb-3">Dział handlowy</li>
+        <ul className="col-span-2 list-none text-hm-black10 lg:row-start-3">
+          <li className="pb-3 text-footer-title font-medium text-hm-yellow">Dział handlowy</li>
           <li className="contact location pb-2 text-white">
             <Person className="mr-4 text-hm-yellow"></Person>
             <span>Aleksandra Daros</span>
@@ -78,8 +78,8 @@ export const Footer = () => {
           </li>
         </ul>
 
-        <ul className="list-none text-hm-black10 col-span-2 lg:row-start-3">
-          <li className="text-hm-yellow text-footer-title font-medium pb-3">Dział techniczno-handlowy</li>
+        <ul className="col-span-2 list-none text-hm-black10 lg:row-start-3">
+          <li className="pb-3 text-footer-title font-medium text-hm-yellow">Dział techniczno-handlowy</li>
           <li className="contact location pb-2 text-white">
             <Person className="mr-4 text-hm-yellow"></Person>
             <span>Tomasz Zapłata</span>

@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/typography";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/typography';
 
-@import "components/others";
+@import 'components/others';
 
-@import "pages/home";
+@import 'pages/home';

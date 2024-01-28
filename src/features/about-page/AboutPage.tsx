@@ -21,14 +21,14 @@ export const AboutPage = () => {
     <div className="">
       <Breadcrumb title={ABOUT_TITLE}></Breadcrumb>
       <div className="py-16 lg:py-20">
-        <div className="max-w-c-xl m-auto px-4 grid grid-cols-1 grid-rows-custom lg:grid-cols-2  gap-x-8">
+        <div className="m-auto grid max-w-c-xl grid-cols-1 grid-rows-custom gap-x-8 px-4  lg:grid-cols-2">
           <div className="row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
             <PageTitle title={ABOUT_TITLE}></PageTitle>
             <p className="mb-4 font-semibold leading-7">
               Firma <span>Hemet</span> Henryk Gałecki istnieje na rynku od 2003 noku. Naszą firmę tworzą ludzie z pasją
               i dobrą energią.
             </p>
-            <p className="mb-4 text-hm-black90 leading-7">
+            <p className="mb-4 leading-7 text-hm-black90">
               Zajmujemy się produkcją i montażem wielofunkcyjnych hal stalowych dla szerokiego zakresu branż m.in.:
             </p>
             <ul className="">
@@ -50,8 +50,8 @@ export const AboutPage = () => {
               i montażu na terenie całego kraju i zagranicą.
             </p>
           </div>
-          <div className="row-start-1 row-end-2 w-full h-full object-fill lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 ">
-            <img className="rounded-md w-full h-full " src={'images/IMG_20180625_151921.jpg'} alt="" />
+          <div className="row-start-1 row-end-2 h-full w-full object-fill lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 ">
+            <img className="h-full w-full rounded-md " src={'images/IMG_20180625_151921.jpg'} alt="" />
           </div>
         </div>
       </div>

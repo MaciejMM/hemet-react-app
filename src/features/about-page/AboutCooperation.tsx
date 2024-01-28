@@ -65,32 +65,32 @@ export const AboutCooperation = () => {
 
   return (
     <div className="bg-hm-black75 py-16 lg:py-20">
-      <div className="max-w-c-xl m-auto px-4 lg:grid lg:grid-cols-8 lg:grid-rows-3 gap-8 lg:grid-rows-trusted">
-        <div className="lg:row-start-1 lg:row-end-1  lg:col-start-1 lg:col-end-9">
+      <div className="m-auto max-w-c-xl gap-8 px-4 lg:grid lg:grid-cols-8 lg:grid-rows-3 lg:grid-rows-trusted">
+        <div className="lg:col-start-1 lg:col-end-9  lg:row-start-1 lg:row-end-1">
           <PageTitle title={ABOUT_COOPERATION_TITLE} color={'white'} disablePaddingTop={true}></PageTitle>
         </div>
-        <div className="text-white text-lg pb-4 lg:pb-0   font-bolder lg:row-start-2 lg:row-end-3 lg:col-start-1 lg:col-end-3 lg:grid lg:items-center lg:border-light lg:border-r-1 ">
+        <div className="font-bolder pb-4 text-lg text-white   lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:grid lg:items-center lg:border-r-1 lg:border-light lg:pb-0 ">
           Wykonaliśmy wiele obiektów różnego typu dla takich firm jak:
         </div>
-        <ul className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6  lg:row-start-2 lg:row-end-2 lg:col-start-3 lg:col-end-9">
+        <ul className="grid grid-cols-3 md:grid-cols-5 lg:col-start-3  lg:col-end-9 lg:row-start-2 lg:row-end-2 lg:grid-cols-6">
           {builded.map((build, index) => {
             return (
-              <li key={index} className="text-1xl lg:text-1xl text-hm-yellow pb-4  xl:pb-0 lg:grid  lg:items-center ">
+              <li key={index} className="text-1xl lg:text-1xl pb-4 text-hm-yellow  lg:grid lg:items-center  xl:pb-0 ">
                 {build}
               </li>
             );
           })}
         </ul>
 
-        <div className="text-white text-lg pt-8 lg:pt-0 pb-4 lg:pb-0 font-bolder lg:row-start-3 lg:row-end-3  lg:col-start-1 lg:grid lg:col-end-3 lg:items-center lg:border-light lg:border-r-1">
+        <div className="font-bolder pb-4 pt-8 text-lg text-white lg:col-start-1 lg:col-end-3 lg:row-start-3 lg:row-end-3  lg:grid lg:items-center lg:border-r-1 lg:border-light lg:pb-0 lg:pt-0">
           Od kilku lat sukcesywnie współpracujemy z:
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 lg:col-start-3 lg:col-end-9  lg:grid lg:items-center">
+        <div className="grid grid-cols-3 md:grid-cols-5 lg:col-start-3 lg:col-end-9 lg:grid  lg:grid-cols-6 lg:items-center">
           {trustedCompanies.map((company, index) => {
             return (
               <div key={index} className="pb-4 lg:pb-4">
-                <div className="text-1xl lg:text-1xl text-hm-yellow font-bolder">{company.name}</div>
-                <div className="text-white text-sm lg:text-base ">{company.city}</div>
+                <div className="text-1xl lg:text-1xl font-bolder text-hm-yellow">{company.name}</div>
+                <div className="text-sm text-white lg:text-base ">{company.city}</div>
               </div>
             );
           })}

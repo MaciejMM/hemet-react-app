@@ -19,7 +19,7 @@ const StyledBreadcrumb = styled.ul`
 
 export const Breadcrumb = (props: BreadcrumbProps) => {
   return (
-    <div className="max-w-c-xl m-auto px-4">
+    <div className="m-auto max-w-c-xl px-4">
       <StyledBreadcrumb className="pt-26 lg:pt-36">
         <li className="">
           <a className="text-hm-black50" href="/">
