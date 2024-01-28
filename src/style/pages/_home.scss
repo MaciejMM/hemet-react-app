@@ -27,7 +27,7 @@
   }
 
   .container {
-    margin: 0 auto;
+    //margin: 0 auto;
     display: flex;
     height: 100%;
     width: 100%;
@@ -40,53 +40,54 @@
     }
 
     h3 {
-      font-size: 1.25rem;
-      text-transform: uppercase;
-      color: $black-10;
-      font-weight: $medium;
-      margin-bottom: 1rem;
+      //font-size: 1.25rem;
+      //text-transform: uppercase;
+      //color: $black-10;
+      //font-weight: $medium;
+      //margin-bottom: 1rem;
       @include for-tablet-landscape-up {
         font-size: 1.75rem;
       }
     }
 
-    h1 {
-      color: $white-100;
-      font-size: 4rem;
-      margin-bottom: 3rem;
-      position: relative;
-      display: inline;
-      height: min-content;
-      padding-left: 1.2rem;
-      @include for-tablet-landscape-up {
-        font-size: 6rem;
-        padding-left: 2rem;
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        width: 10px;
-        background-color: $yellow;
-        height: 0.72em;
-        @include for-tablet-landscape-up {
-          width: 20px;
-        }
-      }
-    }
+    //h1 {
+    //  color: $white-100;
+    //  font-size: 4rem;
+    //  margin-bottom: 3rem;
+    //  position: relative;
+    //  display: inline;
+    //  height: min-content;
+    //  padding-left: 1.2rem;
+    //  @include for-tablet-landscape-up {
+    //    font-size: 6rem;
+    //    padding-left: 2rem;
+    //    height: min-content;
+    //  }
+    //
+    //  &::after {
+    //    position: absolute;
+    //    content: "";
+    //    top: 50%;
+    //    transform: translateY(-50%);
+    //    left: 0;
+    //    width: 10px;
+    //    background-color: $yellow;
+    //    height: 0.75em;
+    //    @include for-tablet-landscape-up {
+    //      width: 20px;
+    //    }
+    //  }
+    //}
 
     .description {
-      color: $black-10;
-      font-weight: $medium;
-      text-transform: uppercase;
+      //color: $black-10;
+      //font-weight: $medium;
+      //text-transform: uppercase;
       margin-bottom: 4rem;
       font-size: 1.2rem;
 
       span {
-        color: $yellow;
+        //color: $yellow;
       }
 
       @include for-tablet-landscape-up {
@@ -96,19 +97,19 @@
     }
 
     .btns {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      @include for-tablet-portrait-up {
-        flex-direction: row;
-      }
+      //width: 100%;
+      //display: flex;
+      //flex-direction: column;
+      //@include for-tablet-portrait-up {
+      //  flex-direction: row;
+      //}
 
       a {
-        display: grid;
-        place-content: center;
-        @include for-tablet-portrait-up {
-          max-width: 250px;
-        }
+        //display: grid;
+        //place-content: center;
+        //@include for-tablet-portrait-up {
+        //  max-width: 250px;
+        //}
 
         &:not(:last-of-type) {
           margin-bottom: 2rem;
