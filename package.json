@@ -2,6 +2,7 @@
   "name": "hemet-react-app",
   "version": "0.1.0",
   "private": true,
+  "main": "app.js",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -14,6 +15,7 @@
     "@types/node": "^20.10.8",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.17",
+    "express": "^4.18.2",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",

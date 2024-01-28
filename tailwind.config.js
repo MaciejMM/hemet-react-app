@@ -31,6 +31,7 @@ module.exports = {
       gridTemplateRows: {
         custom: 'minmax(250px,auto) min-content',
         'custom-min': 'min-content',
+        trusted: 'min-content auto auto',
       },
       width: {
         'container-xl': '1200px',
