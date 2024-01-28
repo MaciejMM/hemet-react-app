@@ -75,10 +75,7 @@ export const AboutCooperation = () => {
         <ul className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6  lg:row-start-2 lg:row-end-2 lg:col-start-3 lg:col-end-9">
           {builded.map((build, index) => {
             return (
-              <li
-                key={index}
-                className="text-1xl lg:text-1xl text-hm-yellow pb-4 lg:p-0 xl:pb-0 lg:grid  lg:items-center"
-              >
+              <li key={index} className="text-1xl lg:text-1xl text-hm-yellow pb-4  xl:pb-0 lg:grid  lg:items-center ">
                 {build}
               </li>
             );

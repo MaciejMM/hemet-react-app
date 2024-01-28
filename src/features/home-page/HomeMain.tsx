@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { LinkButton } from '../../components/Button';
 
 const HemetH1 = styled.h1`
   color: white;
@@ -31,13 +32,9 @@ export const HomeMain = () => {
         <div className="description uppercase text-hm-black10 font-medium mb-4">
           20 lat doświadczenia w budowaniu <span className="text-hm-yellow">konstrukcji stalowych</span>
         </div>
-        <div className="btns w-full flex flex-col gap-8 md:flex-row md:w-1/2">
-          <a className="btn btn-xl grid content-center" href="/projects">
-            Nasze projekty
-          </a>
-          <a className="btn btn-xl grid content-center" href="/contacts">
-            kontakt
-          </a>
+        <div className=" w-full flex flex-col gap-8 md:flex-row ">
+          <LinkButton title={'Nasze projekty'} pageLink={'/projects'}></LinkButton>
+          <LinkButton title={'kontakt'} pageLink={'/contacts'}></LinkButton>
         </div>
       </div>
     </div>

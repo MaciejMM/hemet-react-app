@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { PageTitle } from '../../components/PageTitle';
+import { LinkButton } from '../../components/Button';
 
 export const HomeAbout = () => {
   return (
@@ -15,9 +15,7 @@ export const HomeAbout = () => {
           dobrą energią.
         </p>
         <p className="mb-4 text-hm-black90 leading-7">Zajmujemy się produkcją i montażem...</p>
-        <Link to={'/about'} className="btn btn-xl ">
-          Zobacz więcej
-        </Link>
+        <LinkButton pageLink={'/about'} title={'Zobacz więcej'} disableBorder={true}></LinkButton>
       </main>
     </div>
   );
