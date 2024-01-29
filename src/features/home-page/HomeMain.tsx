@@ -43,8 +43,8 @@ export const HomeMain = () => {
     <HomeDiv className="home-main relative h-[100vh] w-full">
       <img className="absolute left-0 top-0 h-full w-full object-cover" src={'images/DJI_0430.jpg'} alt=""></img>
       <div className="m-auto flex h-full w-full max-w-c-xl flex-col justify-center px-4">
-        <p className="text-3xl font-medium uppercase text-hm-black10">Konstrukcje stalowe</p>
-        <HemetH1 className="w-min text-9xl ">HEMET</HemetH1>
+        <p className="text-2xl  font-medium uppercase text-hm-black10 lg:text-3xl">Konstrukcje stalowe</p>
+        <HemetH1 className="w-min text-7xl lg:text-9xl ">HEMET</HemetH1>
         <div className="description mb-20 text-xl font-medium uppercase text-hm-black10 lg:text-3xl">
           20 lat doświadczenia w budowaniu <span className="text-hm-yellow">konstrukcji stalowych</span>
         </div>
