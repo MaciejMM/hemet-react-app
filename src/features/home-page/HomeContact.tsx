@@ -8,7 +8,7 @@ export const HomeContact = () => {
     <div className="main-contact m-auto max-w-c-xl px-4 py-16 md:grid md:grid-cols-2 md:grid-rows-1 md:gap-x-8 lg:py-20">
       <div className="aspect-video w-full md:col-start-1 md:col-end-2 md:aspect-square md:h-full">
         <img
-          src={'images/pexels-hassan-ouajbir-804065.jpg'}
+          src={'images/pexels-hassan-ouajbir-804065.webp'}
           className="w-full rounded-md object-cover md:h-full"
           alt=""
         ></img>

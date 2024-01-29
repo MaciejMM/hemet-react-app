@@ -8,43 +8,43 @@ export const ProjectPage = () => {
     {
       client: 'CLIP ',
       city: 'Swarzędz',
-      img: 'images/projects/clip_swarzedz.jpg',
+      img: 'images/projects/clip_swarzedz.webp',
     },
     {
       client: 'FM Logistic',
       city: 'Będzin',
-      img: 'images/projects/fm_logistic_bedzin.jpg',
+      img: 'images/projects/fm_logistic_bedzin.webp',
     },
     {
       client: 'MLP',
       city: 'Pruszków',
-      img: 'images/projects/mlp_pruszkow.jpg',
+      img: 'images/projects/mlp_pruszkow.webp',
     },
     {
       param: 'cl',
       client: 'Panattoni',
       city: 'Bielsko Biała',
-      img: 'images/projects/panattoni_bielsko_biala.jpg',
+      img: 'images/projects/panattoni_bielsko_biala.webp',
     },
     {
       client: 'Panattoni',
       city: 'Stryków',
-      img: 'images/projects/panattoni_strykow.jpg',
+      img: 'images/projects/panattoni_strykow.webp',
     },
     {
       client: 'Phoenix',
       city: 'Nowy Tomyśl',
-      img: 'images/projects/phoenix_contact_nowy_tomysl.jpg',
+      img: 'images/projects/phoenix_contact_nowy_tomysl.webp',
     },
     {
       client: 'Prologis',
       city: 'Łódź',
-      img: 'images/projects/prologis_lodz.jpg',
+      img: 'images/projects/prologis_lodz.webp',
     },
     {
       client: 'Prologis',
       city: 'Wrocław',
-      img: 'images/projects/prologis_wroclaw.jpg',
+      img: 'images/projects/prologis_wroclaw.webp',
     },
   ];
   const PROJECT_PAGE_TITLE = 'Projekty';

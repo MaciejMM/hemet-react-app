@@ -2,12 +2,12 @@ import React from 'react';
 
 export const AboutPictures = () => {
   const imagePathList = [
-    'images/IMG_20180802_111201.jpg',
-    'images/IMG_20191030_112518.jpg',
-    'images/IMG_20180608_132959.jpg',
-    'images/IMG_20210318_115316.jpg',
-    'images/IMG_20201204_120559.jpg',
-    'images/IMG_20200213_131455.jpg',
+    'images/IMG_20180802_111201.webp',
+    'images/IMG_20191030_112518.webp',
+    'images/IMG_20180608_132959.webp',
+    'images/IMG_20210318_115316.webp',
+    'images/IMG_20201204_120559.webp',
+    'images/IMG_20200213_131455.webp',
   ];
 
   return (

@@ -51,7 +51,7 @@ export const HomeWhyUs = () => {
     <div className="bg-hm-lightgrey py-16 lg:py-20">
       <div className="m-auto max-w-c-xl px-4 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8">
         <div className="aspect-video  lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:aspect-auto">
-          <img className="h-full w-full rounded-md object-fill" src={'images/IMG_20180608_132959.jpg'} alt=""></img>
+          <img className="h-full w-full rounded-md object-fill" src={'images/IMG_20180608_132959.webp'} alt=""></img>
         </div>
         <main className=" lg:col-start-1 lg:col-end-2 ">
           <PageTitle title={'Dlaczego my'}></PageTitle>
