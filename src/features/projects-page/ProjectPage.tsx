@@ -21,7 +21,6 @@ export const ProjectPage = () => {
       img: 'images/projects/mlp_pruszkow.webp',
     },
     {
-      param: 'cl',
       client: 'Panattoni',
       city: 'Bielsko Biała',
       img: 'images/projects/panattoni_bielsko_biala.webp',
@@ -55,8 +54,8 @@ export const ProjectPage = () => {
       <div className="m-auto max-w-c-xl px-4 py-16 lg:py-20">
         <PageTitle disablePaddingTop={true} title={PROJECT_PAGE_TITLE}></PageTitle>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:gap-8 ">
-          {projects.map((project, i) => (
-            <ProjectCard key={i} index={i} cardDetails={project}></ProjectCard>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} index={index} cardDetails={project}></ProjectCard>
           ))}
         </div>
       </div>

@@ -14,7 +14,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
   const { city, client, img } = props.cardDetails;
 
   return (
-    <div className="rounded-md bg-hm-black75" key={props.index}>
+    <div className="rounded-md bg-black-75" key={props.index}>
       <img className="aspect-square w-full rounded-t-md object-cover" src={img} alt=""></img>
       <div className="p-2 py-3 xl:p-4">
         <div className="text-base text-hm-yellow md:text-lg xl:text-xl">{client}</div>

@@ -64,7 +64,7 @@ export const AboutCooperation = () => {
   ];
 
   return (
-    <div className="bg-hm-black75 py-16 lg:py-20">
+    <div className="bg-black-75 py-16 lg:py-20">
       <div className="m-auto max-w-c-xl gap-8 px-4 lg:grid lg:grid-cols-8 lg:grid-rows-3 lg:grid-rows-trusted">
         <div className="lg:col-start-1 lg:col-end-9  lg:row-start-1 lg:row-end-1">
           <PageTitle title={ABOUT_COOPERATION_TITLE} color={'white'} disablePaddingTop={true}></PageTitle>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Call, Email, LocationOn } from '@mui/icons-material';
 import { PageTitle } from '../../components/PageTitle';
 
@@ -20,15 +19,15 @@ export const HomeContact = () => {
         <p className=" pb-6">Napisz do nas, a nasz zespół odezwie się do Ciebie w ciągu 24 godzin.</p>
         <div className="mt-4 grid grid-flow-row grid-cols-12 text-lg">
           <Call className=" col-span-1 mr-4 text-hm-yellow"></Call>
-          <Link className=" col-span-11 font-semibold text-hm-black75" to="tel:+48655120722">
+          <a className=" col-span-11 font-semibold text-hm-black75" href="tel:+48655120722">
             +48 655 120 722
-          </Link>
+          </a>
         </div>
         <div className=" mt-4 grid grid-flow-row grid-cols-12 text-lg">
           <Email className=" col-span-1 mr-4 text-hm-yellow"></Email>
-          <Link className=" col-span-11 font-semibold text-hm-black75" to="mailto:hemet@hemet.hg.pl">
+          <a className=" col-span-11 font-semibold text-hm-black75" href="mailto:hemet@hemet.hg.pl">
             hemet@hemet.hg.pl
-          </Link>
+          </a>
         </div>
         <div className="  mt-4 grid grid-flow-row grid-cols-12 text-lg">
           <LocationOn className="col-span-1 mr-4 text-hm-yellow"></LocationOn>

@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { getAllRoutes, LinkParam } from '../services/route-service';
 import { Call, Email, LocationOn, Person } from '@mui/icons-material';
 
 export const Footer = () => {
   return (
-    <footer className="bg-hm-black75">
+    <footer className="bg-black-75">
       <div className="m-auto grid max-w-c-xl grid-cols-2 gap-8 px-4 py-16 md:grid-cols-3 lg:grid-cols-4 lg:py-20">
         <ul className="list-none text-hm-black10">
           <li className="pb-3 text-footer-title font-medium text-hm-yellow">Adres</li>
@@ -30,9 +29,9 @@ export const Footer = () => {
           <li className="pb-3 text-footer-title font-medium text-hm-yellow">Linki</li>
           {getAllRoutes().map((route: LinkParam, index: number) => (
             <li key={index} className="pb-2 font-normal text-white">
-              <Link className="text-white " to={route.path}>
+              <a className="text-white " href={route.path}>
                 {route.text}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -41,15 +40,15 @@ export const Footer = () => {
           <li className="pb-3 text-footer-title font-medium text-hm-yellow">Kontakt</li>
           <li className="contact call pb-2 text-white">
             <Call className="mr-4 text-hm-yellow"></Call>
-            <Link className="text-white" to="tel:+48655120722">
+            <a className="text-white" href="tel:+48655120722">
               +48 655 120 722
-            </Link>
+            </a>
           </li>
           <li className="contact email pb-2 text-white">
             <Email className="mr-4 text-hm-yellow"></Email>
-            <Link className="text-white" to="mailto:hemet@hemet.hg.pl">
+            <a className="text-white" href="mailto:hemet@hemet.hg.pl">
               hemet@hemet.hg.pl
-            </Link>
+            </a>
           </li>
           <li className="contact location pb-2 text-white">
             <LocationOn className="mr-4 text-hm-yellow"></LocationOn>
@@ -66,15 +65,15 @@ export const Footer = () => {
 
           <li className="contact email pb-2 text-white">
             <Email className="mr-4 text-hm-yellow"></Email>
-            <Link className="text-white" to="mailto:aleksandra.daros@hemet.hg.pl">
+            <a className="text-white" href="mailto:aleksandra.daros@hemet.hg.pl">
               aleksandra.daros@hemet.hg.pl
-            </Link>
+            </a>
           </li>
           <li className="contact call pb-2 text-white">
             <Call className="mr-4 text-hm-yellow"></Call>
-            <Link className="text-white" to="tel:+48600432556">
+            <a className="text-white" href="tel:+48600432556">
               +48 600 432 556
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -87,15 +86,15 @@ export const Footer = () => {
 
           <li className="contact email pb-2 text-white">
             <Email className="mr-4 text-hm-yellow"></Email>
-            <Link className="text-white" to="mailto:tomasz.zaplata@hemet.hg.pl">
-              tomasz.zaplata@hemet.hg.p
-            </Link>
+            <a className="text-white" href="mailto:tomasz.zaplata@hemet.hg.pl">
+              tomasz.zaplata@hemet.hg.pl
+            </a>
           </li>
           <li className="contact call  text-white ">
             <Call className="mr-4 text-hm-yellow"></Call>
-            <Link className="text-white" to="tel:+48600432556">
+            <a className="text-white" href="tel:+48600432556">
               +48 600 432 556
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
