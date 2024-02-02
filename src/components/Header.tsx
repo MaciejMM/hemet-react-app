@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { getAllRoutes } from '../services/route-service';
 import { ArrowForward, Close, Menu } from '@mui/icons-material';
 import { useAppStore } from '../state/AppState';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const { setShowMenu, showMenu } = useAppStore((state) => ({
@@ -18,11 +18,11 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b-1 border-b-hm-black10 bg-white">
+    <header className="fixed top-0 z-10 w-full border-b-1 border-b-hm-black10 bg-white">
       <nav className="m-auto flex h-[70px] max-w-c-xl flex-row items-center justify-between px-4">
-        <a className="head-title text-2xl font-medium text-hm-black50" href="/">
+        <Link className="head-title text-2xl font-medium text-hm-black50" to={'/'}>
           HEMET
-        </a>
+        </Link>
         <ul className="hidden flex-row md:flex">
           {getAllRoutes().map((route, index) => (
             <li className="min-w-[100px]" key={index}>

@@ -3,6 +3,15 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      textColor: {
+        black: {
+          10: '#e6e6e6',
+          25: '#bfbfbf',
+          50: '#808080',
+          75: '#404040',
+          90: '#191919',
+        },
+      },
       colors: {
         'hm-yellow': '#fed50a',
         'hm-black50': '#808080',
@@ -57,7 +66,6 @@ module.exports = {
       gridTemplateRows: {
         custom: 'minmax(250px,auto) min-content',
         'custom-min': 'min-content',
-        trusted: 'min-content auto auto',
       },
       width: {
         'container-xl': '1200px',

@@ -4,7 +4,7 @@ import { PageTitle } from '../../components/PageTitle';
 
 type HomeWhyContent = {
   title: string;
-  textContent: string;
+  textContent: any;
   tooltip: boolean;
 };
 
@@ -37,7 +37,12 @@ export const HomeWhyUs = () => {
     },
     {
       title: 'Certyfikowani spawacze',
-      textContent: `Zatrudniamy spawaczy, którzy posiadają certyfikaty nadane przez TUV SUD Polska Sp. z o.o. Warszawa oraz Instytut Spawalinictwa w Gliwicach.`,
+      textContent: (
+        <div style={{ whiteSpace: 'pre-wrap' }}>
+          Zatrudniamy spawaczy, którzy posiadają certyfikaty nadane przez TUV SUD Polska{' '}
+          <span style={{ whiteSpace: 'nowrap' }}>Sp. z o.o.</span> Warszawa oraz Instytut Spawalinictwa w Gliwicach.
+        </div>
+      ),
       tooltip: true,
     },
     {

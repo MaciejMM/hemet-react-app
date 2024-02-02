@@ -45,6 +45,11 @@ export const ProjectPage = () => {
       city: 'Wrocław',
       img: 'images/projects/prologis_wroclaw.webp',
     },
+    {
+      client: 'Coccodrillo',
+      city: 'Pianowo',
+      img: 'images/projects/siedziba_CDRL.webp',
+    },
   ];
   const PROJECT_PAGE_TITLE = 'Projekty';
 

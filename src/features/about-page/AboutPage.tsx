@@ -51,7 +51,11 @@ export const AboutPage = () => {
             </p>
           </div>
           <div className="row-start-1 row-end-2 h-full w-full object-fill lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 ">
-            <img className="h-full w-full rounded-md " src={'images/IMG_20180625_151921.webp'} alt="" />
+            <img
+              className="aspect-video h-full w-full rounded-md lg:aspect-square"
+              src={'images/IMG_20180625_151921.webp'}
+              alt=""
+            />
           </div>
         </div>
       </div>

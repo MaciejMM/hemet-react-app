@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render } from '@testing-library/react/pure';
 import React from 'react';
 import { HomeContact } from './HomeContact';
 

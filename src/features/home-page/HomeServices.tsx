@@ -31,12 +31,6 @@ export const HomeServices = () => {
       name: 'Rurociągi ze stali zwykłej i kwasoodpornej',
     },
     {
-      name: 'Silosy różnego typu',
-    },
-    {
-      name: 'Przenośniki różnego typu',
-    },
-    {
       name: 'Pomosty stalowe',
     },
     {
