@@ -39,7 +39,7 @@ export const FooterDepartmentContact = () => {
   ];
 
   return (
-    <div className="4 m-auto grid  max-w-c-xl grid-cols-2 gap-x-8 gap-y-12 border-b-1 border-light bg-black-75 px-4  py-16 md:grid-cols-3 lg:gap-4">
+    <div className=" m-auto grid  max-w-c-xl grid-cols-1 gap-x-8 gap-y-12 border-b-1 border-light bg-black-75 px-4  py-16 md:grid-cols-3 lg:gap-4">
       {hemetContactList.map((user: Contact, index: number) => {
         return (
           <ul className="flex-1 list-none text-hm-black10" key={index}>

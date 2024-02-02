@@ -35,7 +35,7 @@ export const AboutPictures = () => {
           <img
             src={src}
             onClick={() => openImageViewer(index)}
-            className="object-fit aspect-square rounded-md"
+            className="object-fit aspect-square cursor-pointer rounded-md"
             key={index}
             alt=""
           />

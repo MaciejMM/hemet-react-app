@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="bg-black-75 ">
       <FooterDepartmentContact></FooterDepartmentContact>
-      <div className="m-auto grid max-w-c-xl grid-cols-2 gap-8 px-4 py-16 md:grid-cols-3  lg:py-20">
+      <div className="m-auto grid max-w-c-xl grid-cols-1 gap-8 px-4 py-16 md:grid-cols-3  lg:py-20">
         <ul className="list-none text-hm-black10">
           <li className="pb-3 text-xl text-hm-yellow">Adres</li>
           <li className="pb-2">Przedsiębiorstwo Wielobranżowe „HEMET”</li>
