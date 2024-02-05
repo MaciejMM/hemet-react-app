@@ -22,7 +22,7 @@ export const FooterDepartmentContact = () => {
     },
     {
       name: 'inż. Ryszard Graf',
-      department: 'Dział techniczno-handlowy',
+      department: 'Dział techniczny',
       email: 'ryszard.graf@hemet.hg.pl',
       emailTo: 'mailto:ryszard.graf@hemet.hg.pl',
       phoneNumber: '+48 664 936 374',

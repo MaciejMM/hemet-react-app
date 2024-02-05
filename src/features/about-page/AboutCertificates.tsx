@@ -19,7 +19,7 @@ export const AboutCertificates = () => {
         </div>
 
         <ul className="col-start-2 col-end-5 row-start-3 row-end-4 flex flex-col  justify-center">
-          <li className="pb-2 text-xl font-bold text-hm-black75">EN 1090 -1:2009</li>
+          <li className="pb-2 text-xl font-bold text-hm-black75">EN 1090 - 1:2009</li>
           <li className="pb-2 text-xl font-bold text-hm-black75">PN - EN ISO 3834 - 3:2007+ A1</li>
         </ul>
       </div>
