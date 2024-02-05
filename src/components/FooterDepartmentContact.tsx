@@ -43,19 +43,19 @@ export const FooterDepartmentContact = () => {
       {hemetContactList.map((user: Contact, index: number) => {
         return (
           <ul className="flex-1 list-none text-hm-black10" key={index}>
-            <li className="pb-3  text-xl text-yellow-hm">{user.department}</li>
-            <li className="grid grid-flow-row grid-cols-12 pb-2 text-white">
+            <li className="pb-4  text-xl text-yellow-hm">{user.department}</li>
+            <li className="grid grid-flow-row grid-cols-12 pb-3 text-white">
               <Person className="col-span-1 text-hm-yellow"></Person>
               <span className="col-span-11 pl-4 text-base">{user.name}</span>
             </li>
 
-            <li className=" grid grid-flow-row grid-cols-12 pb-2 text-white">
+            <li className=" grid grid-flow-row grid-cols-12 pb-3 text-white">
               <Email className="col-span-1  text-hm-yellow"></Email>
               <a className="col-span-11 pl-4 text-base" href={user.emailTo}>
                 {user.email}
               </a>
             </li>
-            <li className=" grid grid-flow-row grid-cols-12 pb-2 text-white">
+            <li className=" grid grid-flow-row grid-cols-12 pb-3 text-white">
               <Call className="col-span-1 text-hm-yellow"></Call>
               <a className="col-span-11 pl-4 text-base" href={user.phoneText}>
                 {user.phoneNumber}
