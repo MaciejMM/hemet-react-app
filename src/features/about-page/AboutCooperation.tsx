@@ -22,7 +22,7 @@ export const AboutCooperation = () => {
         <div className="lg:col-start-1 lg:col-end-9  lg:row-start-1 lg:row-end-1">
           <PageTitle title={ABOUT_COOPERATION_TITLE} color={'white'} disablePaddingTop={true}></PageTitle>
         </div>
-        <div className="font-bolder pb-4 text-lg text-white lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:grid lg:items-center lg:border-r-1 lg:border-light lg:pb-0 ">
+        <div className="font-bolder pb-4 text-lg text-white lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 lg:grid lg:items-center lg:border-r-1 lg:border-light lg:pb-0">
           Od kilku lat sukcesywnie współpracujemy z:
         </div>
         <ul className="grid grid-cols-3 gap-x-12 gap-y-4 md:grid-cols-5 lg:col-start-3  lg:col-end-9 lg:row-start-2 lg:row-end-2 lg:grid-cols-5">

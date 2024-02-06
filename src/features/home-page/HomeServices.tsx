@@ -50,7 +50,7 @@ export const HomeServices = () => {
         <PageTitle title={HOME_SERVICES_TEXT}></PageTitle>
         {services.map((service, index) => {
           return (
-            <ServiceCard className="card mb-2  px-4 last:mb-0" key={index}>
+            <ServiceCard className="card mb-2  rounded-md px-4 last:mb-0" key={index}>
               <div className="card-title flex items-center rounded-md py-6 text-base font-semibold text-hm-black75 ">
                 <img className="mr-3 h-6 w-6" src={'images/red-crane-services.svg'} alt=""></img>
                 {service.name}
