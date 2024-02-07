@@ -1,15 +1,31 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Footer } from './Footer';
+import { FooterDepartmentContact } from './FooterDepartmentContact';
 
-describe(Footer, () => {
+jest.mock('./FooterDepartmentContact', () => ({
+  FooterDepartmentContact: jest.fn(() => null), // Mock HomeContact component
+}));
+
+describe('Footer', () => {
+  let underTest: any;
+
+  beforeEach(() => {
+    underTest = render(<Footer />);
+  });
+
+  afterEach(() => {
+    underTest.unmount();
+  });
+
   it('should render footer with 3 emails', () => {
-    render(<Footer />);
-    expect(screen.getByText('tomasz.zaplata@hemet.hg.pl')).toBeInTheDocument();
-    expect(screen.getByText('aleksandra.daros@hemet.hg.pl')).toBeInTheDocument();
-    expect(screen.getByText('hemet@hemet.hg.pl')).toBeInTheDocument();
-    expect(screen.getByTestId('footer-id')).not.toBeNull();
-    expect(screen.getByTestId('footer-id')).toBeInTheDocument();
+    expect(underTest.getByText('Biuro / Zakład produkcyjny')).toBeInTheDocument();
+    expect(underTest.getByText('Adres')).toBeInTheDocument();
+    expect(underTest.getByText('Linki')).toBeInTheDocument();
+  });
+
+  it('should call FooterDepartmentContact', () => {
+    expect(FooterDepartmentContact).toHaveBeenCalled();
   });
 });

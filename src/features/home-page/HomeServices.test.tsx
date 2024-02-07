@@ -3,9 +3,19 @@ import React from 'react';
 import { HomeServices } from './HomeServices';
 
 describe(HomeServices, () => {
+
+  let underTest: any;
+
+  beforeEach(() => {
+    underTest = render(<HomeServices />);
+  });
+
+  afterEach(() => {
+    underTest.unmount();
+  });
+
   it('should render Home services component', () => {
-    const component = render(<HomeServices />);
-    expect(component).toBeDefined();
-    expect(component).not.toBeNull();
+    expect(underTest).toBeDefined();
+    expect(underTest).not.toBeNull();
   });
 });

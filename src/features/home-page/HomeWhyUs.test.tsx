@@ -3,9 +3,18 @@ import React from 'react';
 import { HomeWhyUs } from './HomeWhyUs';
 
 describe(HomeWhyUs, () => {
+  let container: any;
+
+  beforeEach(() => {
+    container = render(<HomeWhyUs />);
+  });
+
+  afterEach(() => {
+    container.unmount();
+  });
+
   it('should render Home why us component', () => {
-    const component = render(<HomeWhyUs />);
-    expect(component).toBeDefined();
-    expect(component).not.toBeNull();
+    expect(container).toBeDefined();
+    expect(container).not.toBeNull();
   });
 });

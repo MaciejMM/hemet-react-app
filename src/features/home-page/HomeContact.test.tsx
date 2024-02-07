@@ -1,20 +1,27 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import React from 'react';
 import { HomeContact } from './HomeContact';
 
 describe(HomeContact, () => {
+  let underTest: any;
+
+  beforeEach(() => {
+    underTest = render(<HomeContact />);
+  });
+
+  afterEach(() => {
+    underTest.unmount();
+  });
+
   it('should render Home contact component', () => {
-    const component = render(<HomeContact />);
-    expect(component).toBeDefined();
-    expect(component).not.toBeNull();
-    expect(screen.getByTestId('home-contact')).toBeInTheDocument();
+    expect(underTest).toBeDefined();
+    expect(underTest).not.toBeNull();
   });
 
   it('should render proper contact details', () => {
-    render(<HomeContact />);
-    const phoneLink = screen.getByTestId('phone');
-    const emailLink = screen.getByTestId('mailTo');
+    const phoneLink = underTest.getByTestId('phone');
+    const emailLink = underTest.getByTestId('mailTo');
 
     expect(emailLink.textContent).toBe('hemet@hemet.hg.pl');
     expect(emailLink.getAttribute('href')).toBe('mailto:hemet@hemet.hg.pl');

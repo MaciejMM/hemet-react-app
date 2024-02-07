@@ -3,9 +3,17 @@ import React from 'react';
 import { AboutCertificates } from './AboutCertificates';
 
 describe(AboutCertificates, () => {
+  let underTest: any;
+
+  beforeEach(() => {
+    underTest = render(<AboutCertificates />);
+  });
+
+  afterEach(() => {
+    underTest.unmount();
+  });
   it('should render AboutCertificates component', () => {
-    const { container } = render(<AboutCertificates />);
-    expect(container).toBeDefined();
-    expect(container).not.toBeNull();
+    expect(underTest).toBeDefined();
+    expect(underTest).not.toBeNull();
   });
 });

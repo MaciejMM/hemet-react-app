@@ -3,9 +3,18 @@ import React from 'react';
 import { HomeAbout } from './HomeAbout';
 
 describe(HomeAbout, () => {
+  let homeAboutComponent: any;
+
+  beforeEach(() => {
+    homeAboutComponent = render(<HomeAbout />);
+  });
+
+  afterEach(() => {
+    homeAboutComponent.unmount();
+  });
+
   it('should render Home about component', () => {
-    const component = render(<HomeAbout />);
-    expect(component).toBeDefined();
-    expect(component).not.toBeNull();
+    expect(homeAboutComponent).toBeDefined();
+    expect(homeAboutComponent).not.toBeNull();
   });
 });
