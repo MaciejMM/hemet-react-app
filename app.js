@@ -8,10 +8,15 @@ const { v4: uuidv4 } = require('uuid');
 let app = express();
 const nonce = Buffer.from(uuidv4()).toString('base64');
 
+app.use((req, res, next) => {
+  res.locals.cspNonce = crypto.randomBytes(32).toString('hex');
+  next();
+});
+
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      defaultSrc: ["'self'", `nonce-${nonce}`],
+      defaultSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`],
       scriptSrc: ["'self'"],
       imgSrc: ["'self'", 'https://res.cloudinary.com'],
       styleSrc: ["'self'", "'unsafe-inline'"],
