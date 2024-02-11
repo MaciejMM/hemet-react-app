@@ -2,11 +2,9 @@ const express = require('express');
 const http = require('http');
 const path = require('path');
 const helmet = require('helmet');
-const { Buffer } = require('buffer');
 const crypto = require('crypto');
 const { v4: uuidv4 } = require('uuid');
 let app = express();
-const nonce = Buffer.from(uuidv4()).toString('base64');
 
 app.use((req, res, next) => {
   res.locals.cspNonce = crypto.randomBytes(32).toString('hex');
