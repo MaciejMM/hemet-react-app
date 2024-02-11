@@ -3,7 +3,6 @@ const http = require('http');
 const path = require('path');
 const helmet = require('helmet');
 const crypto = require('crypto');
-const { v4: uuidv4 } = require('uuid');
 let app = express();
 
 app.use((req, res, next) => {
@@ -12,14 +11,22 @@ app.use((req, res, next) => {
 });
 
 app.use(
-  helmet.contentSecurityPolicy({
-    directives: {
-      defaultSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`],
-      scriptSrc: ["'self'"],
-      imgSrc: ["'self'", 'https://res.cloudinary.com'],
-      styleSrc: ["'self'", "'unsafe-inline'"],
-      connectSrc: ["'self'"],
-      frameSrc: ["'self'"],
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`],
+        scriptSrc: ["'self'"],
+        imgSrc: ["'self'", 'https://res.cloudinary.com'],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+        connectSrc: ["'self'"],
+        frameSrc: ["'self'"],
+      },
+    },
+    noSniff: true,
+    hsts: {
+      maxAge: 31536000,
+      includeSubDomains: true,
+      preload: true,
     },
   }),
 );
