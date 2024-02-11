@@ -1,12 +1,9 @@
-import { motion } from 'framer-motion';
 import React, { useCallback, useState } from 'react';
 import ImageViewer from 'react-simple-image-viewer';
-import { useScrollDirection } from '../../hooks/useScrollDirectionHook';
 
 export const AboutPictures = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const { isScrollingDown } = useScrollDirection();
 
   const imagePathList = [
     'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381226/hemet-images/jeol7g4pg32e7arzh8ll.webp',
@@ -35,10 +32,7 @@ export const AboutPictures = () => {
     <div className="bg-hm-lightgrey py-16 lg:py-20">
       <div className="m-auto grid max-w-c-xl grid-cols-2 gap-4 px-4 lg:gap-8">
         {imagePathList.map((src, index) => (
-          <motion.img
-            initial={{ opacity: 0, y: isScrollingDown ? -200 : 200 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <img
             src={src}
             onClick={() => openImageViewer(index)}
             className=" aspect-[3/4] h-full w-full cursor-pointer rounded-md object-cover  md:aspect-square"

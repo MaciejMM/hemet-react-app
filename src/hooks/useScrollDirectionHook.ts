@@ -1,4 +1,3 @@
-// useScrollDirection.js
 import { useScrollDirection as _useScrollDirection } from 'react-use-scroll-direction';
 
 export const useScrollDirection = () => {

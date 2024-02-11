@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/main.scss';
+import './main.scss';
 import { Route, Routes } from 'react-router-dom';
 import { HomePage } from './features/home-page/HomePage';
 import { ContactPage } from './features/contact-page/ContactPage';

@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { PageTitle } from '../../components/PageTitle';
-import { motion } from 'framer-motion';
-import { useScrollDirection } from '../../hooks/useScrollDirectionHook';
 
 type Service = {
   name: string;
@@ -19,8 +17,6 @@ const ServiceCard = styled.div`
 `;
 
 export const HomeServices = () => {
-  const { isScrollingDown } = useScrollDirection();
-
   const services: Service[] = [
     {
       name: 'Prefabrykacja i montaż konstrukcji stalowych',
@@ -45,20 +41,12 @@ export const HomeServices = () => {
 
   return (
     <div className="main-services m-auto max-w-c-xl px-4 pb-16 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-20">
-      <motion.img
-        initial={{ opacity: 0, y: isScrollingDown ? -200 : 200 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+      <img
         className="hidden rounded-md lg:col-start-1 lg:col-end-2 lg:block lg:h-full lg:object-cover"
         src={'images/IMG_20190704_121515.webp'}
         alt=""
-      ></motion.img>
-      <motion.main
-        initial={{ opacity: 0, y: isScrollingDown ? -200 : 200 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="lg:col-start-2 lg:col-end-3 lg:flex lg:flex-col lg:justify-center"
-      >
+      ></img>
+      <main className="lg:col-start-2 lg:col-end-3 lg:flex lg:flex-col lg:justify-center">
         <PageTitle title={HOME_SERVICES_TEXT}></PageTitle>
         {services.map((service, index) => {
           return (
@@ -70,7 +58,7 @@ export const HomeServices = () => {
             </ServiceCard>
           );
         })}
-      </motion.main>
+      </main>
     </div>
   );
 };
