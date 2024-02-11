@@ -59,7 +59,7 @@ export const FooterDepartmentContact = () => {
                 {user.email}
               </a>
             </li>
-            <li className=" grid grid-flow-row grid-cols-12 text-white">
+            <li className=" grid grid-flow-row grid-cols-12 pb-3 text-white">
               <Call className="col-span-1 text-hm-yellow"></Call>
               <a className="col-span-11 pl-4 text-base" data-testid={`userPhoneText-${index}`} href={user.phoneText}>
                 {user.phoneNumber}

@@ -5,8 +5,6 @@ import { AboutCertificates } from './AboutCertificates';
 import { AboutCooperation } from './AboutCooperation';
 import styled from '@emotion/styled';
 import { AboutPictures } from './AboutPictures';
-import { motion } from 'framer-motion';
-import { useScrollDirection } from 'react-use-scroll-direction';
 
 const Dot = styled.span`
   height: 5px;
@@ -18,19 +16,13 @@ const Dot = styled.span`
 
 export const AboutPage = () => {
   const ABOUT_TITLE = 'O nas';
-  const { isScrollingDown } = useScrollDirection();
 
   return (
     <div className="mt-32 lg:mt-10">
       <Breadcrumb title={ABOUT_TITLE}></Breadcrumb>
       <div className="py-16 lg:py-20">
         <div className="m-auto grid max-w-c-xl grid-cols-1 grid-rows-custom gap-x-8 px-4  lg:grid-cols-2">
-          <motion.div
-            initial={{ opacity: 0, y: isScrollingDown ? -200 : 200 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
-          >
+          <div className="row-start-2 row-end-3 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2">
             <PageTitle title={ABOUT_TITLE}></PageTitle>
             <p className="mb-4 font-semibold leading-7">
               Firma <span>"Hemet"</span> Henryk Gałecki istnieje na rynku od 2003 roku. Naszą firmę tworzą ludzie z
@@ -57,12 +49,9 @@ export const AboutPage = () => {
               Możemy pochwalić się dużymi osiągnięciami w wykonawstwie najbardziej skomplikowanych konstrukcji stalowych
               i montażu na terenie całego kraju i za granicą.
             </p>
-          </motion.div>
+          </div>
           <div className="row-start-1 row-end-2 h-full w-full object-fill lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 ">
-            <motion.img
-              initial={{ opacity: 0, y: isScrollingDown ? -200 : 200 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+            <img
               className="aspect-video h-full w-full rounded-md lg:aspect-square"
               src={'images/IMG_20180625_151921.webp'}
               alt=""

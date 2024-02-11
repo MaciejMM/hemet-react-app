@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { LinkButton } from '../../components/Button';
-import { motion } from 'framer-motion';
-import { useScrollDirection } from 'react-use-scroll-direction';
 
-const HemetH1 = styled(motion.h1)`
+const HemetH1 = styled.h1`
   color: white;
   margin-bottom: 3rem;
   position: relative;
@@ -40,56 +38,20 @@ const HomeDiv = styled.div`
   }
 `;
 
-const animation = {
-  initial: { opacity: 0, y: 150 },
-  whileInView: { opacity: 1, y: 0, x: 0 },
-  transition: { duration: 0.6 },
-};
-
 export const HomeMain = () => {
-  const { isScrollingDown } = useScrollDirection();
-
   return (
     <HomeDiv className="home-main relative h-[100vh] w-full">
-      <img
-        className="absolute left-0 top-0 h-full w-full object-cover"
-        src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707660519/hemet-images/xtsvi37htw6ylp6xrzbd.webp'}
-        alt=""
-      ></img>
+      <img className="absolute left-0 top-0 h-full w-full object-cover" src={'images/DJI_0430.webp'} alt=""></img>
       <div className="m-auto flex h-full w-full max-w-c-xl flex-col justify-center px-4">
-        <motion.p
-          initial={{ opacity: 0, x: 150 }}
-          whileInView={animation.whileInView}
-          transition={{ duration: 0.6 }}
-          className="text-2xl  font-medium uppercase text-hm-black10 lg:text-3xl"
-        >
-          Konstrukcje stalowe
-        </motion.p>
-        <HemetH1
-          initial={{ opacity: 0, x: 150 }}
-          whileInView={animation.whileInView}
-          transition={{ duration: 0.6 }}
-          className="w-min text-7xl lg:text-9xl "
-        >
-          HEMET
-        </HemetH1>
-        <motion.div
-          initial={{ opacity: 0, x: 150 }}
-          whileInView={animation.whileInView}
-          transition={{ duration: 0.6 }}
-          className="description mb-20 text-xl font-medium uppercase text-hm-black10 lg:text-3xl"
-        >
+        <p className="text-2xl  font-medium uppercase text-hm-black10 lg:text-3xl">Konstrukcje stalowe</p>
+        <HemetH1 className="w-min text-7xl lg:text-9xl ">HEMET</HemetH1>
+        <div className="description mb-20 text-xl font-medium uppercase text-hm-black10 lg:text-3xl">
           20 lat doświadczenia w budowaniu <span className="text-hm-yellow">konstrukcji stalowych</span>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: isScrollingDown ? -150 : 150 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className=" flex w-full flex-col gap-8 md:flex-row"
-        >
+        </div>
+        <div className=" flex w-full flex-col gap-8 md:flex-row">
           <LinkButton title={'Nasze projekty'} pageLink={'/projects'}></LinkButton>
           <LinkButton title={'Kontakt'} pageLink={'/contacts'}></LinkButton>
-        </motion.div>
+        </div>
       </div>
     </HomeDiv>
   );
