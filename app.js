@@ -3,7 +3,8 @@ const http = require('http');
 const path = require('path');
 const helmet = require('helmet');
 const { Buffer } = require('buffer');
-const { v4 as uuidv4 } = require('uuid');
+const crypto = require('crypto');
+const { v4: uuidv4 } = require('uuid');
 let app = express();
 const nonce = Buffer.from(uuidv4()).toString('base64');
 
