@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { PageTitle } from '../../components/PageTitle';
+import { motion } from 'framer-motion';
+import { useScrollDirection } from '../../hooks/useScrollDirectionHook';
 
 type HomeWhyContent = {
   title: string;
@@ -29,6 +31,8 @@ const CardDiv = styled.div`
 `;
 
 export const HomeWhyUs = () => {
+  const { isScrollingDown } = useScrollDirection();
+
   const whyUsList: HomeWhyContent[] = [
     {
       title: 'Zakład produkcyjny',
@@ -56,13 +60,21 @@ export const HomeWhyUs = () => {
     <div className="bg-hm-lightgrey py-16 lg:py-20">
       <div className="m-auto max-w-c-xl px-4 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-8">
         <div className="aspect-video  lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:aspect-auto">
-          <img
+          <motion.img
+            initial={{ opacity: 0, y: isScrollingDown ? -200 : 200 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
             className="h-full w-full rounded-md object-fill"
             src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381196/hemet-images/lnks495kecevqf8m3eft.webp'}
             alt=""
-          ></img>
+          ></motion.img>
         </div>
-        <main className=" lg:col-start-1 lg:col-end-2 ">
+        <motion.main
+          initial={{ opacity: 0, y: isScrollingDown ? -200 : 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className=" lg:col-start-1 lg:col-end-2 "
+        >
           <PageTitle title={'Dlaczego my'}></PageTitle>
           {whyUsList.map((value, index) => {
             return (
@@ -72,7 +84,7 @@ export const HomeWhyUs = () => {
               </CardDiv>
             );
           })}
-        </main>
+        </motion.main>
       </div>
     </div>
   );
