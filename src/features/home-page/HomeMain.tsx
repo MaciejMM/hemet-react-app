@@ -41,7 +41,11 @@ const HomeDiv = styled.div`
 export const HomeMain = () => {
   return (
     <HomeDiv className="home-main relative h-[100vh] w-full">
-      <img className="absolute left-0 top-0 h-full w-full object-cover" src={'images/DJI_0430.webp'} alt=""></img>
+      <img
+        className="absolute left-0 top-0 h-full w-full object-cover"
+        src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707660519/hemet-images/xtsvi37htw6ylp6xrzbd.webp'}
+        alt=""
+      ></img>
       <div className="m-auto flex h-full w-full max-w-c-xl flex-col justify-center px-4">
         <p className="text-2xl  font-medium uppercase text-hm-black10 lg:text-3xl">Konstrukcje stalowe</p>
         <HemetH1 className="w-min text-7xl lg:text-9xl ">HEMET</HemetH1>
