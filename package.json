@@ -23,6 +23,7 @@
     "react-router-dom": "^6.21.3",
     "react-scripts": "^5.0.1",
     "react-simple-image-viewer": "^1.2.2",
+    "react-use-scroll-direction": "^0.1.0",
     "sass": "^1.69.7",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",

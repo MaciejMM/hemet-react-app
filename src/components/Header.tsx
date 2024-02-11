@@ -35,11 +35,15 @@ export const Header = () => {
         <span className="md:hidden">
           {showMenu ? (
             <label className="py-4 pl-6" htmlFor="i-close">
-              <Close id="i-close" className="close-icon cursor-pointer text-hm-black50" onClick={handleClick}></Close>
+              <Close
+                id="i-close"
+                className="close-icon z-30 cursor-pointer text-hm-black50"
+                onClick={handleClick}
+              ></Close>
             </label>
           ) : (
             <label className="py-4 pl-6" htmlFor="i-menu">
-              <Menu id="i-menu" className="menu-icon cursor-pointer text-hm-black50" onClick={handleClick}></Menu>
+              <Menu id="i-menu" className="menu-icon z-30 cursor-pointer text-hm-black50" onClick={handleClick}></Menu>
             </label>
           )}
         </span>

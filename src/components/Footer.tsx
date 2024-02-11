@@ -39,7 +39,7 @@ export const Footer = () => {
         <ul className="list-none text-hm-black10">
           <li className="pb-4  text-xl font-medium text-hm-yellow">Linki</li>
           {getAllRoutes().map((route: LinkParam, index: number) => (
-            <li key={index} className="pb-3 font-normal text-white">
+            <li key={index} className="pb-3 font-normal text-white last:pb-0">
               <a className="text-white " href={route.path}>
                 {route.text}
               </a>
