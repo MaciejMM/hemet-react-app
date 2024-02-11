@@ -24,6 +24,8 @@ const App = () => {
                       script-src 'self';
                       img-src 'self' https://res.cloudinary.com;
                       style-src 'self' 'unsafe-inline';
+                      connect-src 'self';
+                      frame-src 'self';
                 `}
         ></meta>
       </Helmet>
