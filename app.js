@@ -14,12 +14,13 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`],
-        scriptSrc: ["'self'"],
+        defaultSrc: ["'none'"],
+        scriptSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`],
         imgSrc: ["'self'", 'https://res.cloudinary.com'],
         styleSrc: ["'self'", "'unsafe-inline'"],
         connectSrc: ["'self'"],
         frameSrc: ["'self'"],
+        manifestSrc: ["'self'"],
       },
     },
     noSniff: true,
