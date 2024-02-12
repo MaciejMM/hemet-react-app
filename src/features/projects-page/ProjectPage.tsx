@@ -8,47 +8,47 @@ export const ProjectPage = () => {
     {
       client: 'CLIP ',
       city: 'Swarzędz',
-      img: 'images/projects/clip_swarzedz.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775800/projects/y9xxgxmvhxc8gx2dvrmw.webp',
     },
     {
       client: 'FM Logistic',
       city: 'Będzin',
-      img: 'images/projects/fm_logistic_bedzin.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775804/projects/aokwvgrdbxrdf9ycprav.webp',
     },
     {
       client: 'MLP',
       city: 'Pruszków',
-      img: 'images/projects/mlp_pruszkow.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775808/projects/azb31ypssbxzwou4vdcb.webp',
     },
     {
       client: 'Panattoni',
       city: 'Bielsko Biała',
-      img: 'images/projects/panattoni_bielsko_biala.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775813/projects/qtzyaq54cdzl1tcnbdo8.webp',
     },
     {
       client: 'Panattoni',
       city: 'Stryków',
-      img: 'images/projects/panattoni_strykow.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775818/projects/vvwqbztyhocofntlwpuz.webp',
     },
     {
       client: 'Phoenix',
       city: 'Nowy Tomyśl',
-      img: 'images/projects/phoenix_contact_nowy_tomysl.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775825/projects/dazi5m7eafq1c9duteoq.webp',
     },
     {
       client: 'Prologis',
       city: 'Łódź',
-      img: 'images/projects/prologis_lodz.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775830/projects/uqqz7gfjyhpynyh21rty.webp',
     },
     {
       client: 'Prologis',
       city: 'Wrocław',
-      img: 'images/projects/prologis_wroclaw.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775834/projects/jcxl2swas98g2rrciwfh.webp',
     },
     {
       client: 'Coccodrillo',
       city: 'Pianowo',
-      img: 'images/projects/siedziba_CDRL.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775842/projects/emvcctnyhhmirqwgcchh.webp',
     },
   ];
   const PROJECT_PAGE_TITLE = 'Projekty';

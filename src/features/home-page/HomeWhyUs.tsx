@@ -58,7 +58,9 @@ export const HomeWhyUs = () => {
         <div className="aspect-video  lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 lg:aspect-auto">
           <img
             className="h-full w-full rounded-md object-fill"
-            src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381196/hemet-images/lnks495kecevqf8m3eft.webp'}
+            src={
+              'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775670/home-page-images/nqo9tir4repnxnlr9q7h.webp'
+            }
             alt=""
           ></img>
         </div>

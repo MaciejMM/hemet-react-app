@@ -10,7 +10,9 @@ export const HomeContact = () => {
     >
       <div className="aspect-video w-full md:col-start-1 md:col-end-2 md:aspect-square md:h-full">
         <img
-          src={'images/pexels-hassan-ouajbir-804065.webp'}
+          src={
+            'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775515/home-page-images/uaqjyqrjiu30nqvbblsm.webp'
+          }
           className="w-full rounded-md object-cover md:h-full"
           alt=""
         ></img>

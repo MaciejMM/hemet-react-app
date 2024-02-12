@@ -43,7 +43,7 @@ export const HomeMain = () => {
     <HomeDiv className="home-main relative h-[100vh] w-full">
       <img
         className="absolute left-0 top-0 h-full w-full object-cover"
-        src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707660519/hemet-images/xtsvi37htw6ylp6xrzbd.webp'}
+        src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775696/home-page-images/w8ozkyhdxruc0y7y4yqk.webp'}
         alt=""
       ></img>
       <div className="m-auto flex h-full w-full max-w-c-xl flex-col justify-center px-4">

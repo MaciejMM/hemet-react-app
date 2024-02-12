@@ -6,16 +6,16 @@ export const AboutPictures = () => {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
   const imagePathList = [
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381226/hemet-images/jeol7g4pg32e7arzh8ll.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381257/hemet-images/cwurqjcrjpxezcuj7i9k.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381196/hemet-images/lnks495kecevqf8m3eft.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381030/hemet-images/itlpsxpw1r4lbop95rta.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381205/hemet-images/evkynws8vv8utopabsrz.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381302/hemet-images/oeebdrb3giwgqe6oyeda.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381281/hemet-images/ytu7lfd5llptwoey8g8p.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381262/hemet-images/bz9p5rf01d0chgcutv3f.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381267/hemet-images/snfki97mijuj3rhv86u0.webp',
-    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381286/hemet-images/a5ludih1muvymiqwefz2.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775012/hemet-images/rzbx848vt6prslqydmdj.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775023/hemet-images/la5odipecexzdpvveo9j.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775037/hemet-images/usif0muhltd7tsgizing.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775051/hemet-images/f7hvjxd1kqm9ssdupirw.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775060/hemet-images/xy3ra6wnhtv5wlc1ly3h.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775069/hemet-images/ydkykwlczukeznvqvl6g.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775077/hemet-images/djyulwpcsn9kmebzkivp.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775082/hemet-images/m9unjpflbfvwz6zoefe0.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775089/hemet-images/aaxixhtoy2pbfvuckboe.webp',
+    'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775095/hemet-images/unlc7npugfc1x2tynapm.webp',
   ];
 
   const openImageViewer = useCallback((index: number) => {
