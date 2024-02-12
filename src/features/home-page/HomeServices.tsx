@@ -43,7 +43,7 @@ export const HomeServices = () => {
     <div className="main-services m-auto max-w-c-xl px-4 pb-16 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-20">
       <img
         className="hidden rounded-md lg:col-start-1 lg:col-end-2 lg:block lg:h-full lg:object-cover"
-        src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775627/home-page-images/uh7vnl0yjz0yvgjeztyf.webp'}
+        src={'images/IMG_20190704_121515.webp'}
         alt=""
       ></img>
       <main className="lg:col-start-2 lg:col-end-3 lg:flex lg:flex-col lg:justify-center">

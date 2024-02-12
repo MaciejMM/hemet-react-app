@@ -7,9 +7,7 @@ export const HomeAbout = () => {
     <div className="main-about m-auto max-w-c-xl grid-cols-2 px-4 py-16 lg:grid lg:grid-rows-1 lg:gap-x-8 lg:py-20">
       <div className="col-start-2 col-end-3 row-start-1 row-end-2  ">
         <img
-          src={
-            'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775503/home-page-images/w4eukyervfcqw3fezpac.webp'
-          }
+          src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707654548/hemet-images/g62cejxyv9mcwf697q5q.webp'}
           alt=""
           className="aspect-video h-full w-full rounded-md object-cover lg:aspect-square"
         ></img>

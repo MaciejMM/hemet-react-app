@@ -8,47 +8,47 @@ export const ProjectPage = () => {
     {
       client: 'CLIP ',
       city: 'Swarzędz',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775800/projects/y9xxgxmvhxc8gx2dvrmw.webp',
+      img: 'images/projects/clip_swarzedz.webp',
     },
     {
       client: 'FM Logistic',
       city: 'Będzin',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775804/projects/aokwvgrdbxrdf9ycprav.webp',
+      img: 'images/projects/fm_logistic_bedzin.webp',
     },
     {
       client: 'MLP',
       city: 'Pruszków',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775808/projects/azb31ypssbxzwou4vdcb.webp',
+      img: 'images/projects/mlp_pruszkow.webp',
     },
     {
       client: 'Panattoni',
       city: 'Bielsko Biała',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775813/projects/qtzyaq54cdzl1tcnbdo8.webp',
+      img: 'images/projects/panattoni_bielsko_biala.webp',
     },
     {
       client: 'Panattoni',
       city: 'Stryków',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775818/projects/vvwqbztyhocofntlwpuz.webp',
+      img: 'images/projects/panattoni_strykow.webp',
     },
     {
       client: 'Phoenix',
       city: 'Nowy Tomyśl',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775825/projects/dazi5m7eafq1c9duteoq.webp',
+      img: 'images/projects/phoenix_contact_nowy_tomysl.webp',
     },
     {
       client: 'Prologis',
       city: 'Łódź',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775830/projects/uqqz7gfjyhpynyh21rty.webp',
+      img: 'images/projects/prologis_lodz.webp',
     },
     {
       client: 'Prologis',
       city: 'Wrocław',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775834/projects/jcxl2swas98g2rrciwfh.webp',
+      img: 'images/projects/prologis_wroclaw.webp',
     },
     {
       client: 'Coccodrillo',
       city: 'Pianowo',
-      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707775842/projects/emvcctnyhhmirqwgcchh.webp',
+      img: 'images/projects/siedziba_CDRL.webp',
     },
   ];
   const PROJECT_PAGE_TITLE = 'Projekty';
