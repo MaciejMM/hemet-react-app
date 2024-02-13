@@ -43,7 +43,7 @@ export const HomeServices = () => {
     <div className="main-services m-auto max-w-c-xl px-4 pb-16 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-20">
       <img
         className="hidden rounded-md lg:col-start-1 lg:col-end-2 lg:block lg:h-full lg:object-cover"
-        src={'images/IMG_20190704_121515.webp'}
+        src={'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853262/home-page/rwmdtndvbo281dmfypoh.webp'}
         alt=""
       ></img>
       <main className="lg:col-start-2 lg:col-end-3 lg:flex lg:flex-col lg:justify-center">
@@ -52,7 +52,7 @@ export const HomeServices = () => {
           return (
             <ServiceCard className="card mb-2  rounded-md px-4 last:mb-0" key={index}>
               <div className="card-title flex items-center rounded-md py-6 text-base font-semibold text-hm-black75 ">
-                <img className="mr-3 h-6 w-6" src={'images/red-crane-services.svg'} alt=""></img>
+                <img className="mr-3 h-6 w-6" src={'icons/red-crane-services.svg'} alt=""></img>
                 {service.name}
               </div>
             </ServiceCard>

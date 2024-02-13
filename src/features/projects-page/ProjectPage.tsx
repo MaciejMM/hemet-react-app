@@ -8,47 +8,47 @@ export const ProjectPage = () => {
     {
       client: 'CLIP ',
       city: 'Swarzędz',
-      img: 'images/projects/clip_swarzedz.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853482/projects/xsev45egvakjkeos1vmq.webp',
     },
     {
       client: 'FM Logistic',
       city: 'Będzin',
-      img: 'images/projects/fm_logistic_bedzin.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853488/projects/nmk5zmabrbifrj6whapm.webp',
     },
     {
       client: 'MLP',
       city: 'Pruszków',
-      img: 'images/projects/mlp_pruszkow.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853494/projects/f36obunjxr5u2ahlmqen.webp',
     },
     {
       client: 'Panattoni',
       city: 'Bielsko Biała',
-      img: 'images/projects/panattoni_bielsko_biala.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853500/projects/dhlqsngsc1rhu3z7p5z7.webp',
     },
     {
       client: 'Panattoni',
       city: 'Stryków',
-      img: 'images/projects/panattoni_strykow.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853505/projects/uvpavnrcxjrznt7otbae.webp',
     },
     {
       client: 'Phoenix',
       city: 'Nowy Tomyśl',
-      img: 'images/projects/phoenix_contact_nowy_tomysl.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853511/projects/x9khkzrmgn8g227wev3p.webp',
     },
     {
       client: 'Prologis',
       city: 'Łódź',
-      img: 'images/projects/prologis_lodz.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853517/projects/pwrbx9pnrdavfyvycqqn.webp',
     },
     {
       client: 'Prologis',
       city: 'Wrocław',
-      img: 'images/projects/prologis_wroclaw.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853521/projects/ckgrvyinxnjul45nps82.webp',
     },
     {
       client: 'Coccodrillo',
       city: 'Pianowo',
-      img: 'images/projects/siedziba_CDRL.webp',
+      img: 'https://res.cloudinary.com/dtofeffbi/image/upload/v1707853529/projects/bokoz9d42zui0dbqf4rw.webp',
     },
   ];
   const PROJECT_PAGE_TITLE = 'Projekty';
