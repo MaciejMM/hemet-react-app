@@ -54,7 +54,7 @@ export const AboutPage = () => {
             <img
               className="aspect-video h-full w-full rounded-md lg:aspect-square"
               src={
-                'https://res.cloudinary.com/dtofeffbi/image/upload/v1707381210/hemet-images/j2awltimh1kvteudjekq.webp'
+                'https://res.cloudinary.com/dtofeffbi/image/upload/v1708282875/hemet-images/bi4tyiksntq0mvgygjyr.webp'
               }
               alt=""
             />

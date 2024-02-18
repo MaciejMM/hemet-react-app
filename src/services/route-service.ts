@@ -1,6 +1,6 @@
-import { ContactPage } from '../features/contact-page/ContactPage';
-import { AboutPage } from '../features/about-page/AboutPage';
-import { ProjectPage } from '../features/projects-page/ProjectPage';
+import { ContactPage } from '../features/contact/ContactPage';
+import { AboutPage } from '../features/about/AboutPage';
+import { ProjectPage } from '../features/projects/ProjectPage';
 import React from 'react';
 
 export type LinkParam = {

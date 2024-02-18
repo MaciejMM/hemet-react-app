@@ -1,6 +1,6 @@
 import React from 'react';
 import { Breadcrumb } from '../../components/Breadcrumb';
-import { HomeContact } from '../home-page/HomeContact';
+import { HomeContact } from '../home/HomeContact';
 
 export const ContactPage = () => {
   const CONTACT_TITLE = 'Kontakt';
