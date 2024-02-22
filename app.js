@@ -3,7 +3,7 @@ const http = require('http');
 const path = require('path');
 const helmet = require('helmet');
 const crypto = require('crypto');
-let app = express();
+const app = express();
 
 app.use((req, res, next) => {
   res.locals.cspNonce = crypto.randomBytes(32).toString('hex');
@@ -14,13 +14,13 @@ app.use(
   helmet({
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: ["'none'"],
-        scriptSrc: ["'self'", (req, res) => `'nonce-${res.locals.cspNonce}'`],
-        imgSrc: ["'self'", 'data:', 'https://res.cloudinary.com'],
-        styleSrc: ["'self'", "'unsafe-inline'"],
-        connectSrc: ["'self'"],
-        frameSrc: ["'self'"],
-        manifestSrc: ["'self'"],
+        defaultSrc: ['\'none\''],
+        scriptSrc: ['\'self\'', (req, res) => `'nonce-${res.locals.cspNonce}'`],
+        imgSrc: ['\'self\'', 'data:', 'https://res.cloudinary.com'],
+        styleSrc: ['\'self\'', '\'unsafe-inline\''],
+        connectSrc: ['\'self\''],
+        frameSrc: ['\'self\''],
+        manifestSrc: ['\'self\''],
       },
     },
     noSniff: true,
@@ -33,6 +33,14 @@ app.use(
 );
 
 app.use(express.static(path.join(__dirname, 'build')));
+
+app.use((req, res, next) => {
+  if (req.secure) {
+    next();
+  } else {
+    res.redirect(`https://${req.headers.host}${req.url}`);
+  }
+});
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
