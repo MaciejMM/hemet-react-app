@@ -35,10 +35,10 @@ app.use(
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use((req, res, next) => {
-  if (req.secure) {
-    next();
+  if (req.protocol !== 'https') {
+    res.redirect(`https://${req.header('host')}${req.url}`);
   } else {
-    res.redirect(`https://${req.headers.host}${req.url}`);
+    next();
   }
 });
 
@@ -49,4 +49,4 @@ app.get('/*', (req, res) => {
 const port = process.env.PORT || '8080';
 app.set('port', port);
 const server = http.createServer(app);
-server.listen(port, () => console.log(`Running on localhost:${port}`));
+server.listen(port, () => console.log(`Running on http://localhost:${port}`));
