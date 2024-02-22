@@ -4,9 +4,17 @@ const path = require('path');
 const helmet = require('helmet');
 const crypto = require('crypto');
 const enforce = require('express-sslify');
+require('dotenv').config({ path: '.env' });
+const morgan = require('morgan');
 const app = express();
 
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+}
+if (process.env.NODE_ENV === 'production') {
+  app.use(enforce.HTTPS({ trustProtoHeader: true }));
+}
 
 app.use((req, res, next) => {
   res.locals.cspNonce = crypto.randomBytes(32).toString('hex');
