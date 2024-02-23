@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { getAllRoutes } from '../services/route-service';
-import { ArrowForward, Close, Menu } from '@mui/icons-material';
+import { ArrowForward, Menu } from '@mui/icons-material';
 import { useAppStore } from '../state/AppState';
 import { Link } from 'react-router-dom';
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 export const Header = () => {
+  const { scrollY } = useScroll();
   const { setShowMenu, showMenu } = useAppStore((state) => ({
     setShowMenu: state.setShowMenu,
     showMenu: state.showMenu,
   }));
+  const [hidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    const previous = scrollY.getPrevious() ?? 0;
+
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
+
   const handleClick = () => {
     setShowMenu(!showMenu);
   };
@@ -18,7 +32,14 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-10 w-full border-b-1 border-b-hm-black10 bg-white">
+    <motion.header
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: '-100%' },
+      }}
+      animate={hidden ? 'hidden' : 'visible'}
+      transition={{ duration: '0.35', ease: 'easeInOut' }}
+      className="fixed top-0 z-10 w-full border-b-1 border-b-hm-black10 bg-white">
       <nav className="m-auto flex h-[70px] max-w-c-xl flex-row items-center justify-between px-4">
         <Link className="head-title text-2xl font-medium text-hm-black50" to={'/'}>
           HEMET
@@ -33,15 +54,9 @@ export const Header = () => {
           ))}
         </ul>
         <span className="md:hidden">
-          {showMenu ? (
-            <label className="py-4 pl-6" htmlFor="i-close">
-              <Close id="i-close" className="close-icon cursor-pointer text-hm-black50" onClick={handleClick}></Close>
-            </label>
-          ) : (
             <label className="py-4 pl-6" htmlFor="i-menu">
               <Menu id="i-menu" className="menu-icon cursor-pointer text-hm-black50" onClick={handleClick}></Menu>
             </label>
-          )}
         </span>
       </nav>
       {showMenu ? (
@@ -63,6 +78,6 @@ export const Header = () => {
       ) : (
         <></>
       )}
-    </header>
+    </motion.header>
   );
 };
